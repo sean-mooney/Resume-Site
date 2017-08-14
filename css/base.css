@@ -1,3 +1,68 @@
 body {
   background-color: white;
 }
+
+h1 {
+  font-size: 48px;
+}
+
+h2 {
+  font-size: 20px;
+}
+
+.container {
+  width: 100%;
+}
+
+.header {
+  background-color: gray;
+  margin: 0px 0px 10px 0px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.header .navigation-bar {
+  padding: 0px 0px 0px 0px;
+}
+
+.navigation-logo {
+  padding-left: 15px;
+}
+
+.navigation-links {
+  text-align: right;
+  margin-right: 20px;
+}
+
+.navigation-links a {
+  font-size: 20px;
+  font-weight: 500;
+  color: lightgrey;
+  padding: 0px 10px 0px 10px;
+  text-decoration: none;
+
+  -webkit-transition: color 0.5s ease-out;
+  -moz-transition: color 0.5s ease-out;
+  -o-transition: color 0.5s ease-out;
+  transition: color 0.5s ease-out;
+}
+
+.navigation-links a:hover {
+  color: white;
+
+}
+
+.title-area {
+  width: 100%;
+  height: 70vh;
+  text-align: center;
+}
+
+.title {
+  padding-top: 23vh;
+  color: gray;
+}
+
+.sub-title {
+  color: darkgray;
+}
