@@ -10,17 +10,18 @@ h2 {
   font-size: 20px;
 }
 
-.container {
-  width: 100%;
-  padding: 0px 0px 0px 0px;
-}
-
 .header {
-  background-color: gray;
+  background: -webkit-linear-gradient(bottom, rgba(0,0,0,0), rgba(0,0,0,0.3)); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(top, rgba(0,0,0,0), rgba(0,0,0,0.3)); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(top, rgba(0,0,0,0), rgba(0,0,0,0.3)); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(to top, rgba(0,0,0,0), rgba(0,0,0,0.3)); /* Standard syntax (must be last) */
+  position: absolute;
   margin: 0px 0px 0px 0px;
   padding-top: 20px;
   padding-bottom: 50px;
   height: 8%;
+  width: 100%;
+  z-index: 1000;
 }
 
 .header .navigation-bar {
@@ -39,7 +40,7 @@ h2 {
 .navigation-links a {
   font-size: 20px;
   font-weight: 500;
-  color: lightgrey;
+  color: #e8e8e8;
   padding: 0px 10px 0px 10px;
   text-decoration: none;
 
@@ -51,26 +52,4 @@ h2 {
 
 .navigation-links a:hover {
   color: white;
-}
-
-.main {
-  margin: 0px 0px 0px 0px;
-  height: 91.5vh;
-  width: 100%;
-}
-
-.title-area {
-  position: absolute;
-  width: 100%;
-  margin-top: -48%;
-  text-align: center;
-}
-
-.title {
-  padding-top: 23vh;
-  color: gray;
-}
-
-.sub-title {
-  color: darkgray;
 }

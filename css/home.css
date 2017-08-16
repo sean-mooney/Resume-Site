@@ -1,0 +1,52 @@
+h1 {
+  font-size: 100px;
+  color: black;
+}
+
+h2 {
+  font-size: 20px;
+}
+
+.container {
+  width: 100%;
+  padding: 0px 0px 0px 0px;
+}
+
+.main {
+  margin: 0px 0px 0px 0px;
+  height: 100%;
+  width: 100%;
+}
+
+.title-area {
+  position: absolute;
+  width: 100%;
+  margin-top: -48%;
+  text-align: center;
+}
+
+.title {
+  padding-top: 23vh;
+  color: gray;
+}
+
+.sub-title {
+  color: darkgray;
+}
+
+.carousel-control {
+  background-image: none !important;
+  z-index: 20;
+}
+
+.carousel-inner {
+  z-index: 0;
+}
+
+.right, .left{
+  color: #fcfcfc;
+}
+
+.right:hover, .left:hover {
+  color: #fcfcfc;
+}
