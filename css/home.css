@@ -1,10 +1,33 @@
+@font-face {
+    font-family: Montserrat;
+    src: url(../fonts/Montserrat-Medium.otf);
+}
+
+@font-face {
+    font-family: Raleway;
+    src: url(../fonts/Raleway-Light.ttf);
+}
+
 h1 {
-  font-size: 100px;
-  color: black;
+  font-family: Montserrat;
+  font-size: 80px;
+  font-weight: 800;
+  color: white;
 }
 
 h2 {
-  font-size: 20px;
+  font-family: Raleway;
+  font-size: 50px;
+  color: white;
+  font-weight: 700;
+}
+
+h3 {
+  padding-top: 2px;
+  font-family: "HelveticaNeue-Light"
+  font-size: 30px;
+  color: white;
+  font-weight: 400;
 }
 
 .container {
@@ -21,7 +44,7 @@ h2 {
 .title-area {
   position: absolute;
   width: 100%;
-  top: 30%;
+  top: 28%;
   text-align: center;
 }
 
@@ -29,8 +52,14 @@ h2 {
   color: gray;
 }
 
+.title img {
+  width: 40%;
+  height: auto;
+}
+
 .sub-title {
-  color: darkgray;
+  margin-top: 0px;
+  color: white;
 }
 
 .carousel-control {
