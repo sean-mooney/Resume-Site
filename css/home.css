@@ -1,3 +1,62 @@
+.row {
+  margin: 0 0 0 0;
+}
+
+.arrow {
+  position: fixed;
+  bottom: 0;
+  left: 50%;
+  margin-left:-20px;
+}
+
+.bounce {
+	-webkit-animation-name: bounce;
+	-moz-animation-name: bounce;
+	-o-animation-name: bounce;
+	animation-name: bounce;
+}
+
+.animated {
+  -webkit-animation-fill-mode:both;
+  -moz-animation-fill-mode:both;
+  -ms-animation-fill-mode:both;
+  -o-animation-fill-mode:both;
+
+  animation-iteration-count: infinite;
+  -moz-animation-iteration-count: infinite;
+  -webkit-animation-iteration-count: infinite;
+
+  animation-fill-mode:both;
+  -webkit-animation-duration:2s;
+  -moz-animation-duration:2s;
+  -ms-animation-duration:2s;
+  -o-animation-duration:2s;
+  animation-duration:2s;
+}
+
+
+@-webkit-keyframes bounce {
+	0%, 20%, 50%, 80%, 100% {-webkit-transform: translateY(0);}	40% {-webkit-transform: translateY(-30px);}
+	60% {-webkit-transform: translateY(-15px);}
+}
+
+@-moz-keyframes bounce {
+	0%, 20%, 50%, 80%, 100% {-moz-transform: translateY(0);}
+	40% {-moz-transform: translateY(-30px);}
+	60% {-moz-transform: translateY(-15px);}
+}
+
+@-o-keyframes bounce {
+	0%, 20%, 50%, 80%, 100% {-o-transform: translateY(0);}
+	40% {-o-transform: translateY(-30px);}
+	60% {-o-transform: translateY(-15px);}
+}
+@keyframes bounce {
+	0%, 20%, 50%, 80%, 100% {transform: translateY(0);}
+	40% {transform: translateY(-30px);}
+	60% {transform: translateY(-15px);}
+}
+
 @font-face {
     font-family: Montserrat;
     src: url(../fonts/Montserrat-Medium.otf);
@@ -8,23 +67,23 @@
     src: url(../fonts/Raleway-Light.ttf);
 }
 
-h1 {
+.sub-title h1 {
   font-family: Montserrat;
   font-size: 80px;
   font-weight: 800;
   color: white;
 }
 
-h2 {
+.title h2 {
   font-family: Raleway;
   font-size: 50px;
   color: white;
   font-weight: 700;
 }
 
-h3 {
+.sub-title h3 {
   padding-top: 2px;
-  font-family: "HelveticaNeue-Light"
+  font-family: "HelveticaNeue-Light";
   font-size: 30px;
   color: white;
   font-weight: 400;
@@ -39,17 +98,19 @@ h3 {
   margin: 0px 0px 0px 0px;
   height: 100%;
   width: 100%;
+  background: url("../pictures/home-workspace.jpg")
+    no-repeat fixed right;
 }
 
 .title-area {
   position: absolute;
   width: 100%;
-  top: 28%;
+  top: 27%;
   text-align: center;
 }
 
 .title {
-  color: gray;
+  color: white;
 }
 
 .title img {
@@ -62,19 +123,28 @@ h3 {
   color: white;
 }
 
-.carousel-control {
-  background-image: none !important;
-  z-index: 20;
+.about {
+  top: 100%;
+  margin: 20px 10% 20px 10%;
+  position: relative;
+  line-height: 1.75;
 }
 
-.carousel-inner {
-  z-index: 0;
+.about-title {
+  color: #3161d8;
+  margin-bottom: 30px;
+  text-align: center;
 }
 
-.right, .left{
-  color: #fcfcfc;
+.about-title h1 {
+  color: #3161d8;
+  font-size: 40px;
 }
 
-.right:hover, .left:hover {
-  color: #fcfcfc;
+.about-content {
+  font-size: 20px;
+}
+
+.p2 {
+  margin-top: 30px;
 }
