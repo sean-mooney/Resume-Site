@@ -1,15 +1,19 @@
 <html lang="en">
   <head>
+    <title>Sean Mooney</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css">
-    <link rel="stylesheet" type="text/css" href="../css/base.css">
+    <link rel="stylesheet" type="text/css" href="../css/base.css" media="only screen and (min-width: 960px)">
+    <link rel="stylesheet" type="text/css" href="../css/base-mobile.css" media="only screen and (max-width: 960px)">
     <link rel="stylesheet" type="text/css" href="../css/home.css">
+    <link rel="stylesheet" type="text/css" href="../css/home-mobile.css" media="only screen and (max-width: 960px)">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="../js/header.js"></script>
   </head>
   <body>
     <div class="header">
-      <div class="navigation-bar container">
+      <div class="navigation-bar" id="mobileMenu">
         <div class="navigation-logo col-lg-2 col-md-3 col-sm-4 col-xs-6">
           <img src="../pictures/SeanMooneyLogoWhiteOutlined.png"></img>
         </div>
@@ -19,11 +23,12 @@
           <a href="resume.html">Resume</a>
           <a href="contact.html">Contact</a>
           <a href="https://github.com/sean-mooney">GitHub</a>
+          <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
         </div>
       </div>
     </div>
 
-    <div class="main">
+    <div class="main container">
       <div class="content row">
           <div class="title-area">
             <div class="title">

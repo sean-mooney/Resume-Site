@@ -69,22 +69,22 @@
 
 .sub-title h1 {
   font-family: Montserrat;
-  font-size: 80px;
+  font-size: 8vw;
   font-weight: 800;
   color: white;
 }
 
 .title h2 {
   font-family: Raleway;
-  font-size: 50px;
+  font-size: 5vw;
   color: white;
   font-weight: 700;
 }
 
 .sub-title h3 {
-  padding-top: 2px;
+  padding: 2px 10px 0 10px;
   font-family: "HelveticaNeue-Light";
-  font-size: 30px;
+  font-size: 3.5vw;
   color: white;
   font-weight: 400;
 }
@@ -100,7 +100,7 @@
   width: 100%;
   background: url("../pictures/home-workspace.jpg")
     no-repeat fixed right;
-  background-size: 100% 100%;
+  background-size: 250% 100%;
   background-color: white;
 }
 
@@ -140,7 +140,7 @@
 }
 
 .about-photo img {
-  width: 16%;
+  width: 40%;
   height: auto;
   border-radius: 50%;
 }
@@ -159,8 +159,9 @@
 
 .about-content {
   font-family: "HelveticaNeue-Light";
-  font-size: 18px;
+  font-size: 14px;
   font-weight: 400;
+  text-align: center;
 }
 
 .p2, .p3 {
