@@ -13,6 +13,9 @@
   height: auto;
   width: 100%;
   background-color: #e6e6e6;
+  background: url("https://images.pexels.com/photos/218983/pexels-photo-218983.jpeg?w=1260&h=750&auto=compress&cs=tinysrgb")
+    no-repeat fixed right;
+  background-size: 100% 100%;
 }
 
 .content {
@@ -21,16 +24,19 @@
   text-align: center;
   color: #444;
   box-shadow: 0 2px 6px rgba(100, 100, 100, 0.5);
-  background: rgba(255,255,255,0.95); /* For browsers that do not support gradients */
+  background: rgba(255,255,255,0.92); /* For browsers that do not support gradients */
 }
 
-.main-title {
+.main-title  h1, .main-title {
+  padding-top: 10px;
+  padding-bottom: 10px;
   color: #23345e;
+  font-size: 50px;
 }
 
 .project-item {
   margin: 0 0 0 0;
-  padding: 0 0 0 0;
+  padding: 0 20px 0 20px;
 }
 
 .project-title {
@@ -41,6 +47,7 @@
 .project-title h2 {
   color: #23345e;
   font-family: Montserrat;
+  font-size: 32px;
 }
 
 hr {
@@ -52,20 +59,22 @@ hr {
 }
 
 .seperator {
+  display: inline-block;
+  width: 65%;
   border: none;
   height: 2px;
-  margin: 60px 100px 50px 100px;
+  margin: 60px 10% 50px 10%;
   color: #333;
   background-color: rgba(0,0,0,0.5);
 }
-
-
 
 .project-list {
   text-align: left;
 }
 
 .project-desc {
+  font-family: "HelveticaNeue-Light";
+  font-size: 16px;
   padding: 0 0 0 0;
 }
 
