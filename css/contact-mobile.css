@@ -1,0 +1,61 @@
+@font-face {
+    font-family: Montserrat;
+    src: url(../fonts/Montserrat-Medium.otf);
+}
+
+@font-face {
+    font-family: Raleway;
+    src: url(../fonts/Raleway-Light.ttf);
+}
+
+.main {
+  margin: 0 0 0 0;
+  padding: 0 0 0 0;
+  height: auto;
+  width: 100%;
+  background-color: #e6e6e6;
+  background: url("https://images.pexels.com/photos/17663/pexels-photo.jpg?w=1260&h=750&auto=compress&cs=tinysrgb")
+    no-repeat fixed center;
+  background-size: 100% 100%;
+}
+
+.content {
+  margin: 83px 0 0 0;
+  padding: 30px 3% 10% 3%;
+  text-align: center;
+  color: #444;
+  box-shadow: 0 2px 6px rgba(100, 100, 100, 0.5);
+  background: rgba(255,255,255,0.92); /* For browsers that do not support gradients */
+}
+
+h1 {
+  font-family: Raleway;
+}
+
+.description {
+  font-family: "HelveticaNueue-Light";
+  font-size: 16px;
+  padding-bottom: 30px;
+}
+
+.description h2 {
+  margin-top: 30px;
+  font-family: Montserrat;
+}
+
+.description h3 {
+  margin-top: 50px;
+}
+
+.description p {
+  margin-bottom: 30px;
+}
+
+.description ul {
+  margin-top: 40px;
+  list-style: none;
+}
+
+.footer {
+  margin-top: 0px; /*Page Specific*/
+}

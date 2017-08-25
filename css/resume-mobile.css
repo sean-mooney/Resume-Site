@@ -18,7 +18,7 @@
   height: auto;
   width: 100%;
   background-color: #e6e6e6;
-  background: url("../pictures/portfolio-page.jpg")
+  background: url("../pictures/resume-page.jpg")
     no-repeat fixed right;
   background-size: 100% 100%;
 }
@@ -62,9 +62,6 @@ hr {
 
 .experience-job h3 {
   font-size: 20px;
-}
-
-.experience-company {
 }
 
 .experience-tasks {
