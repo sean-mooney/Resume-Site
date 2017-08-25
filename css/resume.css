@@ -32,6 +32,7 @@
   padding-bottom: 10px;
   color: #23345e;
   font-size: 50px;
+  font-family: Montserrat;
 }
 
 hr {
@@ -42,26 +43,77 @@ hr {
   background-color: rgba(0,0,0,0.5);
 }
 
+.experience-block {
+  margin-bottom: 30px;
+}
+
+.experience-job {
+  margin-top: 40px;
+  font-family: "HelveticaNueue-Light";
+}
+
+.experience-job h3 {
+  font-size: 20px;
+}
+
+.experience-company {
+}
+
+.experience-tasks {
+  font-size: 20px;
+  text-align: left;
+}
+
+.experience-tasks a {
+  font-family: Raleway;
+  color: blue;
+}
+
+.experience-tasks li {
+  margin-top: 10px;
+}
+
 .education-block {
   text-align: center;
+  margin-bottom: 30px;
 }
 
 .education-image {
   background-color: #002f87;
   width: 25%;
-  margin-left: 70px;
+  margin-left: 5%;
+  margin-top: 3%;
 }
 
 .education-image img {
+  padding: 3px 3px 3px 3px;
   width: 100%;
   height: auto;
+}
+
+.education {
+  margin: 0 0 0 3%;
+  padding: 0 0 0 0;
 }
 
 .education-institute {
   padding-top: 20px;
 }
 
-.more-info-button {
+.skill {
+  margin-top: 30px;
+}
+
+.skill-icon {
+  font-size: 100px;
+}
+
+.skill-name h3 {
+  font-family: Raleway;
+  font-weight: bold;
+}
+
+.pdf-button {
   margin-top: 50px;
   width: 250px;
   background-color: #23345e;
@@ -80,7 +132,7 @@ hr {
   font-family: "HelveticaNeue-Light";
 }
 
-.more-info-button:hover {
+.pdf-button:hover {
   background-color: white;
   color: black;
 }

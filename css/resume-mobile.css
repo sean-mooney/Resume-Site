@@ -1,0 +1,178 @@
+@font-face {
+    font-family: Montserrat;
+    src: url(../fonts/Montserrat-Medium.otf);
+}
+
+@font-face {
+    font-family: Raleway;
+    src: url(../fonts/Raleway-Light.ttf);
+}
+
+.container {
+  padding: 0 0 0 0;
+}
+
+.main {
+  margin: 0 0 0 0;
+  padding: 0 0 0 0;
+  height: auto;
+  width: 100%;
+  background-color: #e6e6e6;
+  background: url("../pictures/portfolio-page.jpg")
+    no-repeat fixed right;
+  background-size: 100% 100%;
+}
+
+.content {
+  margin: 83px 0 0 0;
+  padding: 10px 3% 75px 3%;
+  text-align: center;
+  color: #444;
+  box-shadow: 0 2px 6px rgba(100, 100, 100, 0.5);
+  background: rgba(255,255,255,0.92); /* For browsers that do not support gradients */
+}
+
+.title  h1, .title {
+  padding-top: 10px;
+  padding-bottom: 0px;
+  color: #23345e;
+  font-family: Montserrat;
+  font-size: 25px;
+}
+
+hr {
+  border: none;
+  height: 2px;
+  margin: 30px 20px 30px 20px;
+  color: #333;
+  background-color: rgba(0,0,0,0.5);
+}
+
+.experience-block {
+  margin-bottom: 30px;
+  margin-left: 10px;
+  margin-right: 10px;
+  font-size: 12px;
+}
+
+.experience-job {
+  margin-top: 30px;
+  font-family: "HelveticaNueue-Light";
+}
+
+.experience-job h3 {
+  font-size: 20px;
+}
+
+.experience-company {
+}
+
+.experience-tasks {
+  font-size: 12px;
+  text-align: left;
+  margin: 0 0 0 0;
+  padding: 0 15px 0 15px;
+}
+
+.experience-tasks a {
+  font-family: Raleway;
+  color: blue;
+}
+
+.experience-block ul {
+  padding-left: 15px;
+}
+
+.experience-tasks li {
+  margin-top: 10px;
+}
+
+.education-block {
+  text-align: center;
+  margin-bottom: 30px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.education-image {
+  background-color: #002f87;
+  margin-top: 3%;
+  width: 100%;
+  padding: 0 30px 0 30px;
+}
+
+.education-image img {
+  display: block;
+  margin: auto;
+  padding: 3px 3px 3px 3px;
+  width: 200px;
+  height: 30%;
+}
+
+.education h2 {
+  font-size: 20px;
+}
+
+.education h3 {
+  font-size: 15px;
+}
+
+.education p {
+  padding-top: 10px;
+  font-size: 12px;
+}
+
+.education-institute {
+  padding-top: 20px;
+}
+
+.skills-block {
+  padding: 0 0 0 0;
+  margin: 0 0 0 0;
+}
+
+.skill {
+  margin-top: 30px;
+  padding: 0 0 0 0;
+}
+
+.col-xs-6 {
+  padding: 0 0 0 0;
+}
+
+.skill-icon {
+  font-size: 100px;
+}
+
+.skill-name h3 {
+  font-family: Raleway;
+  font-weight: bold;
+}
+
+.pdf-button {
+  margin-top: 50px;
+  width: 250px;
+  background-color: #23345e;
+  color: white;
+  border: 2px solid;
+  letter-spacing: 2px;
+  font-size: 14px;
+  padding: 15px 20px 15px 20px;
+  /*Transitions*/
+  -o-transition:.3s;
+  -ms-transition:.3s;
+  -moz-transition:.3s;
+  -webkit-transition:.3s;
+  /* main property */
+  transition:.3s;
+  font-family: "HelveticaNeue-Light";
+}
+
+.pdf-button:hover {
+  background-color: white;
+  color: black;
+}
+
+.footer {
+  margin-top: 0px; /*Page Specific*/
+}
