@@ -70,7 +70,7 @@ form input[type="text"], form textarea {
   text-align: center;
 }
 
-.button-wrapper input {
+.button-wrapper input, .button-wrapper button {
   margin-top: 25px;
   width: 200px;
   background-color: #23345e;
@@ -87,7 +87,7 @@ form input[type="text"], form textarea {
   font-family: "HelveticaNeue-Light";
 }
 
-.button-wrapper input:hover {
+.button-wrapper input:hover, .button-wrapper button:hover {
   background-color: white;
   color: black;
 }
@@ -97,6 +97,10 @@ form input[type="text"], form textarea {
   /*text-align: center;*/
 }
 
+textarea {
+  height: 200px;
+}
+
 .message-wrapper textarea {
   resize: none;
 }
@@ -104,4 +108,29 @@ form input[type="text"], form textarea {
 .footer {
   margin-top: 0px; /*Page Specific*/
   height: 200px;
+}
+
+.main-sent {
+  margin: 0 0 0 0;
+  padding: 0 0 0 0;
+  height: auto;
+  width: 100%;
+  background-color: #e6e6e6;
+  background-size: 100% 100%;
+}
+
+.content-sent {
+  margin: 83px 0 0 0;
+  padding: 30px 1% 10% 1%;
+  box-shadow: 0 2px 6px rgba(100, 100, 100, 0.5);
+  background: rgba(255,255,255,0.92);
+  color: #23345e;
+}
+
+.description-sent {
+  margin-top: 10vh;
+  text-align: center;
+  font-weight: 200;
+  font-family: Raleway;
+  font-size: 16px;
 }

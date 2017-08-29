@@ -12,26 +12,6 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <script src="js/header.js"></script>
-
-    <script>
-      function validateForm() {
-          var name = document.forms["contact-form"]["name"].value;
-          var email = document.forms["contact-form"]["email"].value;
-          var message = document.forms["contact-form"]["message"].value;
-          if (name == "") {
-              alert("Name must be filled out");
-              return false;
-          }
-          else if (email == "") {
-            alert("Email must be filled out");
-            return false;
-          }
-          else if (message == "") {
-            alert("Message can not be left blank");
-            return false;
-          }
-      }
-    </script>
   </head>
   <body>
     <div class="header">
@@ -50,41 +30,16 @@
       </div>
     </div>
 
-    <div class="main container">
-      <div class="content row">
+    <div class="main-sent container">
+      <div class="content-sent row">
         <div class="title">
-          <h1>Thanks for your interest!</h1>
+          <h1>Thank you!</h1>
         </div>
-        <div class="description">
-          <h2>Get in Touch</h2><br>
-
-          <form class="contact-form" name="contact-form" action="php/send_form_email.php" onsubmit="return validateForm()" method="post">
-            <div class="name-wrapper">
-              <label for="name">Your Name *</label><br>
-              <input type="text" id="name" name="name"></input>
-            </div>
-
-            <div class="email-wrapper">
-              <label for="email">Your Email *</label><br>
-              <input type="text" id="email" name="email"></input>
-            </div>
-
-            <div class="phone-wrapper">
-              <label for="lastName">Your Phone</label><br>
-              <input type="text" id="phone" name="phone"></input>
-            </div>
-
-            <div class="message-wrapper">
-              <label for="message">Message *</label><br>
-              <textarea id="message" name="message" maxlength="1000" cols="25" rows="6"></textarea><br>
-            </div>
-            <p style="text-align: center;">* = Required</p>
-
-            <div class="button-wrapper">
-              <input class="" type="submit" value="Submit"></input>
-            </div>
-          </form>
-
+        <div class="description-sent">
+          <h3>Your message has been sent! <br> I will be in touch with you soon!</h3><br>
+          <div class="button-wrapper">
+            <a href="index.html"><button>Return to Home</button></a>
+          </div>
         </div>
       </div>
       <div class="footer">
