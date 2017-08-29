@@ -14,8 +14,6 @@
   height: auto;
   width: 100%;
   background-color: #e6e6e6;
-  background: url("../pictures/contact-page.jpg")
-    no-repeat fixed center;
   background-size: 100% 100%;
 }
 
@@ -105,4 +103,5 @@ form input[type="text"], form textarea {
 
 .footer {
   margin-top: 0px; /*Page Specific*/
+  height: 200px;
 }

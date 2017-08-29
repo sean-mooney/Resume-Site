@@ -98,8 +98,6 @@
   margin: 0px 0px 0px 0px;
   height: 100%;
   width: 100%;
-  background: url("../pictures/home-workspace.jpg")
-    no-repeat fixed right;
   background-size: 250% 100%;
   background-color: white;
 }
