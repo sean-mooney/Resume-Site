@@ -167,6 +167,10 @@
   margin-top: 30px;
 }
 
+.portfolio-button-container {
+  margin-left: 15px;
+}
+
 .portfolio-button {
   margin-top: 35px;
   width: 200px;
