@@ -12,8 +12,8 @@ body {
 }
 
 .content {
-  margin: 83px 0px 0px 0px;
-  padding: 10px 5% 50px 5%;
+  margin: 60px 0px 0px 0px;
+  padding: 20px 5% 50px 5%;
   text-align: center;
   box-shadow: 0 2px 6px rgba(100, 100, 100, 0.5);
   background: rgba(255,255,255,0.9);
@@ -25,7 +25,7 @@ body {
 
 .project-item {
   margin: 0 0 0 0;
-  padding: 0 0 0 0;
+  padding: 20px 0 20px 0;
 }
 
 .project-title {
@@ -37,23 +37,6 @@ body {
   color: #4000a3;
   font-family: Montserrat;
   font-size: 24px;
-}
-
-hr {
-  border: none;
-  height: 2px;
-  margin: 30px 20px 30px 20px;
-  color: #333;
-  background-color: rgba(0,0,0,0.5);
-}
-
-.seperator {
-  display: inline-block;
-  border: none;
-  width: 160px;
-  margin: 60px 50px 50px 50px;
-  color: #333;
-  background-color: rgba(0,0,0,0.5);
 }
 
 .project-desc {
@@ -68,15 +51,14 @@ hr {
 }
 
 .project-images .thumbnail {
-  width: 50%;
-  padding-top: 10px;
-  padding-left: 5px;
-  padding-right: 5px;
+  border: none;
+  height: auto;
 }
 
 .project-images .thumbnail-tall {
-  width: 150px;
-  height: 200px;
+  height: 250px;
+  padding: 10px 10px 0 10px;
+  /*margin: 10px 10px 0 10px;*/
 }
 
 .more-info-button {
@@ -125,7 +107,7 @@ hr {
 .lightbox img {
 	/** Pad the lightbox image */
 	max-width: 90%;
-	height: 55%;
+	height: auto;
 	margin-top: 50%;
 }
 
@@ -136,3 +118,27 @@ hr {
 	/** Unhide lightbox **/
 	display: block;
 }
+
+
+@media screen and (orientation:portrait) {
+  .lightbox img {
+  	/** Pad the lightbox image */
+  	max-width: 80%;
+  	height: auto;
+  	margin-top: 30%;
+  }
+
+  #SLT1 img, #SLT2 img, #SLT3 img {
+    margin-top: 50%;
+  }
+
+}
+
+@media screen and (orientation:landscape) {
+  .lightbox img {
+  	/** Pad the lightbox image */
+  	width: 75%;
+  	height: 70%;
+  	margin-top: 13%;
+  }
+ }

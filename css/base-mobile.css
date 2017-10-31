@@ -17,7 +17,7 @@
 .header img {
   margin-left: 0;
   padding: 5px 5px 5px 5px;
-  width: 120px;
+  width: 100px;
   height: auto;
 }
 
@@ -62,7 +62,7 @@
 }
 
 .navigation-bar.responsive .navigation-links {
-  padding-top: 10vh;
+  padding-top: 12vh;
 }
 
 .footer {
@@ -115,4 +115,20 @@
   border: 2px solid gray;
   background-color: white;
   color: black;
+}
+
+@media screen and (orientation:landscape) {
+
+
+  .header img {
+    margin-left: 0;
+    padding: 7px 5px 5px 5px;
+    width: 80px;
+    height: auto;
+  }
+
+  .navigation-bar .icon {
+    margin-top: 0;
+  }
+
 }
