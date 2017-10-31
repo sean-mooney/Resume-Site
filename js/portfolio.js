@@ -1,4 +1,4 @@
-$(document).on("click", "a", function(){
+$(document).on("click", ".thumnail, .thumbnail-tall", function(){
   $('html, body').css('overflow', 'hidden');
 });
 
