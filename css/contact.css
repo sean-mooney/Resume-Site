@@ -12,9 +12,12 @@
   margin: 0 0 0 0;
   height: auto;
   width: 100%;
-  background-color: #e6e6e6;
-  background: url("../pictures/contact-page.jpg")
-    no-repeat fixed center;
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#4000a3+0,d8543c+100 */
+  background: #4000a3; /* Old browsers */
+  background: -moz-linear-gradient(-45deg, #4000a3 0%, #d8543c 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(-45deg, #4000a3 0%,#d8543c 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(135deg, #4000a3 0%,#d8543c 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4000a3', endColorstr='#d8543c',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
   background-size: 100% 100%;
 }
 
@@ -23,7 +26,7 @@
   padding: 30px 3% 5% 3%;
   box-shadow: 0 2px 6px rgba(100, 100, 100, 0.5);
   background: rgba(255,255,255,0.92);
-  color: #23345e;
+  color: black;
 }
 
 .content .title {
@@ -32,6 +35,7 @@
 
 h1 {
   font-family: Raleway;
+  color: #4000a3;
 }
 
 .description {
@@ -43,6 +47,8 @@ h1 {
   text-align: center;
   margin-top: 30px;
   font-family: Montserrat;
+  color: #4000a3;
+
 }
 
 form {
@@ -69,9 +75,9 @@ form input[type="text"], form textarea {
 .button-wrapper input, .button-wrapper button {
   margin-top: 50px;
   width: 250px;
-  background-color: #23345e;
+  background-color: #4000a3;
   color: white;
-  border: 2px solid;
+  border: none;
   letter-spacing: 2px;
   font-size: 14px;
   padding: 15px 20px 15px 20px;

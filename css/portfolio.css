@@ -8,13 +8,20 @@
     src: url(../fonts/Raleway-Light.ttf);
 }
 
+body {
+  overflow: auto;
+}
+
 .main {
   margin: 0 0 0 0;
   height: auto;
   width: 100%;
-  background-color: #e6e6e6;
-  background: url("../pictures/portfolio-page.jpg")
-    no-repeat fixed right;
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#4000a3+0,d8543c+100 */
+  background: #4000a3; /* Old browsers */
+  background: -moz-linear-gradient(-45deg, #4000a3 0%, #d8543c 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(-45deg, #4000a3 0%,#d8543c 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(135deg, #4000a3 0%,#d8543c 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4000a3', endColorstr='#d8543c',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
   background-size: 100% 100%;
 }
 
@@ -30,7 +37,7 @@
 .main-title  h1, .main-title {
   padding-top: 10px;
   padding-bottom: 10px;
-  color: #23345e;
+  color: #4000a3;
   font-size: 50px;
 }
 
@@ -45,7 +52,7 @@
 }
 
 .project-title h2 {
-  color: #23345e;
+  color: #4000a3;
   font-family: Montserrat;
   font-size: 32px;
 }
@@ -88,7 +95,11 @@ hr {
 .project-images .thumbnail {
   width: 200px;
   height: 200px;
-  /*margin: 10px 2px 10px 2px;*/
+}
+
+.project-images .thumbnail-tall {
+  width: 200px;
+  height: 300px;
 }
 
 .project-link a {
@@ -99,9 +110,9 @@ hr {
 .more-info-button {
   margin-top: 50px;
   width: 250px;
-  background-color: #23345e;
+  background-color: #4000a3;
   color: white;
-  border: 2px solid;
+  border: none;
   letter-spacing: 2px;
   font-size: 14px;
   padding: 15px 20px 15px 20px;
@@ -154,4 +165,8 @@ hr {
 
 	/** Unhide lightbox **/
 	display: block;
+}
+
+.lightbox:target ~ body {
+  overflow: hidden;
 }

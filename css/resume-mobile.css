@@ -33,7 +33,7 @@
 .title  h1, .title {
   padding-top: 10px;
   padding-bottom: 0px;
-  color: #23345e;
+  color: #4000a3;
   font-family: Montserrat;
   font-size: 25px;
 }
@@ -147,7 +147,7 @@ hr {
 .pdf-button {
   margin-top: 50px;
   width: 250px;
-  background-color: #23345e;
+  background-color: #4000a3;
   color: white;
   border: 2px solid;
   letter-spacing: 2px;

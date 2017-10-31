@@ -22,7 +22,7 @@
   padding: 30px 1% 10% 1%;
   box-shadow: 0 2px 6px rgba(100, 100, 100, 0.5);
   background: rgba(255,255,255,0.92);
-  color: #23345e;
+  color: black;
 }
 
 h1 {
@@ -36,10 +36,12 @@ h1 {
 }
 
 .title h1 {
+  color: #4000a3;
   text-align: center;
 }
 
 .description h2 {
+  color: #4000a3;
   text-align: center;
   margin-top: 30px;
   font-family: Montserrat;
@@ -73,9 +75,9 @@ form input[type="text"], form textarea {
 .button-wrapper input, .button-wrapper button {
   margin-top: 25px;
   width: 200px;
-  background-color: #23345e;
+  background-color: #4000a3;
   color: white;
-  border: 2px solid;
+  border: none;
   letter-spacing: 2px;
   font-size: 14px;
   padding: 15px 20px 15px 20px;
@@ -124,7 +126,7 @@ textarea {
   padding: 30px 1% 10% 1%;
   box-shadow: 0 2px 6px rgba(100, 100, 100, 0.5);
   background: rgba(255,255,255,0.92);
-  color: #23345e;
+  color: #4000a3;
 }
 
 .description-sent {

@@ -1,3 +1,7 @@
+body {
+  overflow: auto;
+}
+
 .main {
   margin: 0 0 0 0;
   padding: 0 0 0 0;
@@ -16,7 +20,7 @@
 }
 
 .main-title {
-  color: #23345e;
+  color: #4000a3;
 }
 
 .project-item {
@@ -30,7 +34,7 @@
 }
 
 .project-title h2 {
-  color: #23345e;
+  color: #4000a3;
   font-family: Montserrat;
   font-size: 24px;
 }
@@ -70,12 +74,17 @@ hr {
   padding-right: 5px;
 }
 
+.project-images .thumbnail-tall {
+  width: 150px;
+  height: 200px;
+}
+
 .more-info-button {
   margin-top: 50px;
   width: 200px;
-  background-color: #23345e;
+  background-color: #4000a3;
   color: white;
-  border: 2px solid;
+  border: none;
   letter-spacing: 2px;
   font-size: 14px;
   padding: 15px 20px 15px 20px;
