@@ -1,7 +1,10 @@
 <html lang="en">
   <head>
-    <title>Sean Mooney</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="Connecticut Web Developer for hire in Fairfield County. JavaScript, HTML, CSS, Node, Angular, Express, Mongo, SQL">
+    <meta name="author" content="Sean Mooney">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sean Mooney</title>
     <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="css/base.css" media="only screen and (min-width: 960px)">
     <link rel="stylesheet" type="text/css" href="css/base-mobile.css" media="only screen and (max-width: 960px)">
@@ -17,15 +20,15 @@
     <div class="header">
       <div class="navigation-bar" id="mobileMenu">
         <div class="navigation-logo col-lg-2 col-md-3 col-sm-4 col-xs-6">
-          <img src="pictures/SeanMooneyLogoWhiteOutlined.png"></img>
+          <a href="./index.html"><img src="pictures/SeanMooneyLogoWhiteOutlined.png"></img></a>
         </div>
         <div class="navigation-links">
           <a href="index.html">Home</a>
           <a href="portfolio.html">Portfolio</a>
-          <a href="resume.html">Resume</a>
+          <a href="./documents/Sean Mooney - Resume.pdf" target="_blank">Resume</a>
           <a href="contact.html">Contact</a>
           <a href="https://github.com/sean-mooney" target="_blank">GitHub</a>
-          <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+          <a href="javascript:void(0);" class="icon" onclick="toggleHeader()">&#9776;</a>
         </div>
       </div>
     </div>
@@ -39,13 +42,30 @@
           <!--NEW ITEM-->
           <div class="project-item">
             <div class="project-title col-xs-12">
+              <h2>New Reddit</h2>
+            </div>
+            <div class="project-desc col-xs-12">
+              <p>
+                Using MEAN, I reverse-engineered reddit.com to demonstrate my abilities with the stack as well as expand
+                my knowledge and learn new techniques. To achieve this, I created a RESTful API for CRUD functions, utilized MongoDB to store posts and user information,
+                and adhered to the MVC design pattern with Angular to achieve a functional front end.
+              </p>
+            </div>
+            <div class="project-link">
+              <a class="link-out" href="https://github.com/sean-mooney/New-Reddit" target="_blank"><button class="more-info-button">Link to GitHub</button></a>
+            </div>
+          </div> <!--END ITEM-->
+
+          <!--NEW ITEM-->
+          <div class="project-item">
+            <div class="project-title col-xs-12">
               <h2>SEAN-MOONEY.COM</h2>
             </div>
             <div class="project-desc col-xs-12">
               <p>
-                The reason for this being at the top of the list is because it is my most recent project. I have decided to redo this website since
+                My personal website written in HTML, CSS on Bootstrap, and JavaScript. I have decided to redo this website since
                 my old one looked dated and I had learned a lot of new ideas and practices from working on other projects. I wanted to implement these ideas and techniques
-                into a newer website that better reflected my abilities. Below is the link to the GitHub.
+                into a newer website that better reflected my abilities.
               </p>
             </div>
             <div class="project-link">
@@ -61,10 +81,8 @@
             <div class="project-desc col-xs-12">
               <p>
                 Created using Unity 3D, C#, Blender, and Photoshop, this personal project stemmed from my love of the Warcraft 3 Mod "Line Tower Wars".
-                It was meant for commercial release but due to lack of funding and insufficient time
-                the project was never finished. During the time I spent making it, I learned how to implement anti-cheat practices, how to program multiplayer games,
-                and calculate paths for objects to travel along to avoid obstacles. The full documentation of how the game played and the idea behind it can be found on
-                it's GitHub repository below.
+                During the time I spent making it, I learned how to implement anti-cheat practices, how to provide a concurrent game across a network,
+                and calculate AI trajectories for objects to travel along to avoid obstacles.
               </p>
             </div>
             <div class="project-images col-xs-12">
@@ -72,17 +90,23 @@
               <a href="#SLT2"><img class="col-md-4 col-xs-4 thumbnail" src="pictures/SLT-2.png"></img></a>
               <a href="#SLT3"><img class="col-md-4 col-xs-4 thumbnail" src="pictures/SLT-3.png"></img></a>
 
-              <a href="#_" class="lightbox" id="SLT1">
-                <img src="pictures/SLT-1.png">
-              </a>
+              <span class="lightbox" id="SLT1">
+                <span onclick="document.location.href = '#SLT1';" class="glyphicon glyphicon-arrow-left left"></span>
+                <a href="#_"><img src="pictures/SLT-1.png"></a>
+                <span onclick="document.location.href = '#SLT2';" class="glyphicon glyphicon-arrow-right right"></span>
+              </span>
 
-              <a href="#_" class="lightbox" id="SLT2">
-                <img src="pictures/SLT-2.png">
-              </a>
+              <span class="lightbox" id="SLT2">
+                <span onclick="document.location.href = '#SLT1';" class="glyphicon glyphicon-arrow-left left"></span>
+                <a href="#_"><img src="pictures/SLT-2.png"></a>
+                <span onclick="document.location.href = '#SLT3';" class="glyphicon glyphicon-arrow-right right"></span>
+              </span>
 
-              <a href="#_" class="lightbox" id="SLT3">
-                <img src="pictures/SLT-3.png">
-              </a>
+              <span class="lightbox" id="SLT3">
+                <span onclick="document.location.href = '#SLT2';" class="glyphicon glyphicon-arrow-left left"></span>
+                <a href="#_"><img src="pictures/SLT-3.png"></a>
+                <span onclick="document.location.href = '#SLT3';" class="glyphicon glyphicon-arrow-right right"></span>
+              </span>
 
             </div>
             <div class="project-link">
@@ -97,35 +121,16 @@
             </div>
             <div class="project-desc col-xs-12">
               <p>
-                This website was a small project for my dad who is a Construction Project Manager. Using SquareSpace, I created a platform for him to post new homes he's building,
+                This website was a project for who is a Construction Project Manager. Using SquareSpace, I created a platform for him to post new homes he's building,
                 upload his portfolio to showcase his work, and have others contact him if they're interested. While SquareSpace provides an easier way to
                 make websites, it has many limitations that require workarounds to perfect the product. One example is there is no feature for a portfolio to be on
                 more than one page. To get around this, I hardcoded two buttons, a list of numbers, and wrote a script to determine what the next page should be based on the
-                current page being viewed, and highlight the current page's number. It was a good demonstration of learning the limitations of a software and working around them
+                current page being viewed, and highlight the current page's number. It was a good demonstration of hacking around the limitations of a software and working around them
                  to achieve a better result.
               </p>
             </div>
             <div class="project-link">
             <a href="http://www.cpmooney.com" target="blank"><button class="more-info-button">Link to Website</button></a>
-            </div>
-          </div>           <!--END ITEM-->
-
-          <!--NEW ITEM-->
-          <div class="project-item">
-            <div class="project-title col-xs-12">
-              <h2>JUSTCHEATONHIM.COM</h2>
-            </div>
-            <div class="project-desc col-xs-12">
-              <p>
-                Small project for a client who needed a website for his e-commerce store. This was my introduction to SquareSpace
-                and used it as an opportunity to learn a new platform that could streamline the development process. With it, I tackled many obstacles,
-                some presented by SquareSpace due to its limitations. One instance would be that without being able to edit HTML within SquareSpace, I had to use only CSS and JavaScript
-                 to mold the website into what it is now. Many elements that needed to be adjusted had no ID's or Classes that could be edited without consequence.
-                Despite all this, I enjoyed learning how to overcome challenges on a new platform and learned a lot from the experience. A link to the website and can be found below.
-              </p>
-            </div>
-            <div class="project-link">
-              <a href="http://www.justcheatonhim.com" target="_blank"><button class="more-info-button">Link to Website</button></a>
             </div>
           </div>           <!--END ITEM-->
           <!--NEW ITEM-->
@@ -178,21 +183,27 @@
               </p>
             </div>
             <div class="project-images col-xs-12">
-              <a href="#WAM1"><img class="col-md-4 col-xs-6 thumbnail-tall" src="pictures/whack-a-mole-1.png"></img></a>
+              <a href="#WAM1" class="thumbnail-tall"><img class="col-md-4 col-xs-6 thumbnail-tall" src="pictures/whack-a-mole-1.png"></img></a>
               <a href="#WAM2"><img class="col-md-4 col-xs-6 thumbnail-tall" src="pictures/whack-a-mole-2.png"></img></a>
               <a href="#WAM3"><img class="col-md-4 col-xs-6 thumbnail-tall" src="pictures/whack-a-mole-3.png"></img></a>
+              <!-- SEPERATE -->
+              <span class="lightbox wam" id="WAM1">
+                <span onclick="document.location.href = '#WAM1';" class="glyphicon glyphicon-arrow-left left"></span>
+                <a href="#_"><img src="pictures/whack-a-mole-1.png"></a>
+                <span onclick="document.location.href = '#WAM2';" class="glyphicon glyphicon-arrow-right right"></span>
+              </span>
 
-              <a href="#_" class="lightbox wam" id="WAM1">
-                <img src="pictures/whack-a-mole-1.png">
-              </a>
+              <span class="lightbox wam" id="WAM2">
+                <span onclick="document.location.href = '#WAM1';" class="glyphicon glyphicon-arrow-left left"></span>
+                <a href="#_"><img src="pictures/whack-a-mole-2.png"></a>
+                <span onclick="document.location.href = '#WAM3';" class="glyphicon glyphicon-arrow-right right"></span>
+              </span>
 
-              <a href="#_" class="lightbox wam" id="WAM2">
-                <img src="pictures/whack-a-mole-2.png">
-              </a>
-
-              <a href="#_" class="lightbox wam" id="WAM3">
-                <img src="pictures/whack-a-mole-3.png">
-              </a>
+              <span class="lightbox wam" id="WAM3">
+                <span onclick="document.location.href = '#WAM2';" class="glyphicon glyphicon-arrow-left left"></span>
+                <a href="#_"><img src="pictures/whack-a-mole-3.png"></a>
+                <span onclick="document.location.href = '#WAM3';" class="glyphicon glyphicon-arrow-right right"></span>
+              </span>
             </div>
             <div class="project-link">
               <a href="https://github.com/sean-mooney/whack-a-mole" target="_blank"><button class="more-info-button">Link to GitHub</button></a>

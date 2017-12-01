@@ -1,8 +1,8 @@
-function myFunction() {
-    var x = document.getElementById("mobileMenu");
-    if (x.className === "navigation-bar") {
-        x.className += " responsive";
+function toggleHeader() {
+    var menu = document.getElementById("mobileMenu");
+    if (!menu.classList.contains("responsive")) {
+        menu.classList.add("responsive");
     } else {
-        x.className = "navigation-bar";
+        menu.classList.remove("responsive");
     }
 }
