@@ -30,90 +30,7 @@
   background: rgba(255,255,255,0.92); /* For browsers that do not support gradients */
 }
 
-.title  h1, .title {
-  padding-top: 10px;
-  padding-bottom: 10px;
-  color: #4000a3;
-  font-size: 50px;
-  /*font-family: Montserrat;*/
-}
-
-hr {
-  border: none;
-  height: 2px;
-  margin: 30px 20px 30px 20px;
-  color: #333;
-  background-color: rgba(0,0,0,0.5);
-}
-
-.experience-block {
-  margin-bottom: 30px;
-}
-
-.experience-job {
-  margin-top: 40px;
-  font-family: "HelveticaNueue-Light";
-}
-
-.experience-job h3 {
-  font-size: 20px;
-}
-
-.experience-tasks {
-  font-size: 20px;
-  text-align: left;
-}
-
-.experience-tasks a {
-  font-family: Raleway;
-  color: blue;
-}
-
-.experience-tasks li {
-  margin-top: 10px;
-}
-
-.education-block {
-  text-align: center;
-  margin-bottom: 30px;
-}
-
-.education-image {
-  background-color: #002f87;
-  width: 25%;
-  margin-left: 5%;
-  margin-top: 3%;
-}
-
-.education-image img {
-  padding: 3px 3px 3px 3px;
-  width: 100%;
-  height: auto;
-}
-
-.education {
-  margin: 0 0 0 3%;
-  padding: 0 0 0 0;
-}
-
-.education-institute {
-  padding-top: 20px;
-}
-
-.skill {
-  margin-top: 30px;
-}
-
-.skill-icon {
-  font-size: 100px;
-}
-
-.skill-name h3 {
-  font-family: Raleway;
-  font-weight: bold;
-}
-
-.pdf-button {
+button {
   margin-top: 50px;
   width: 250px;
   background-color: #4000a3;
@@ -132,7 +49,8 @@ hr {
   font-family: "HelveticaNeue-Light";
 }
 
-.pdf-button:hover {
-  background-color: white;
-  color: black;
+.jumbotron h2 {
+  margin-top: 50px;
+  font-size: 22px;
+  font-style: normal;
 }
