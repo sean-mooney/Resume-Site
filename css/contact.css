@@ -109,8 +109,12 @@ form input[type="text"], form textarea {
   height: auto;
   width: 100%;
   background-color: #e6e6e6;
-  background: url("../pictures/contact-page.jpg")
-    no-repeat fixed center;
+  background: #4000a3; /* Old browsers */
+  background: -moz-linear-gradient(-45deg, #4000a3 0%, #d8543c 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(-45deg, #4000a3 0%,#d8543c 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(135deg, #4000a3 0%,#d8543c 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4000a3', endColorstr='#d8543c',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+  background-size: 100% 100%;
   background-size: 100% 100%;
 }
 
@@ -130,4 +134,8 @@ form input[type="text"], form textarea {
   font-weight: 200;
   font-family: Raleway;
   font-size: 16px;
+}
+
+.description-sent .button-wrapper {
+  margin-top: 50px;
 }

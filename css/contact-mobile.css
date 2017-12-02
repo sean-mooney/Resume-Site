@@ -122,11 +122,12 @@ textarea {
 }
 
 .content-sent {
-  margin: 83px 0 0 0;
-  padding: 30px 1% 10% 1%;
+  margin: 73px 0 0 0;
+  padding: 10vh 1% 10% 1%;
   box-shadow: 0 2px 6px rgba(100, 100, 100, 0.5);
   background: rgba(255,255,255,0.92);
   color: #4000a3;
+  height: 80vh;
 }
 
 .description-sent {
@@ -135,4 +136,9 @@ textarea {
   font-weight: 200;
   font-family: Raleway;
   font-size: 16px;
+}
+
+.description-sent .button-wrapper {
+  margin-top: 50px;
+  margin-bottom: 50px;
 }
