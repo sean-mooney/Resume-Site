@@ -1,234 +1,155 @@
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="description" content="Connecticut Web Developer for hire in Fairfield County. JavaScript, HTML, CSS, Node, Angular, Express, Mongo, SQL">
-    <meta name="author" content="Sean Mooney">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sean Mooney</title>
-    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
-    <link rel="stylesheet" type="text/css" href="css/base.css" media="only screen and (min-width: 960px)">
-    <link rel="stylesheet" type="text/css" href="css/base-mobile.css" media="only screen and (max-width: 960px)">
-    <link rel="stylesheet" type="text/css" href="css/home.css">
-    <link rel="stylesheet" type="text/css" href="css/home-mobile.css" media="only screen and (max-width: 960px)">
-    <link rel="shortcut icon" href="pictures/favicon.ico" type="image/x-icon">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <script src="js/header.js"></script>
-    <script src="js/index.js"></script>
-  </head>
-  <body>
-    <div class="header">
-      <div class="navigation-bar" id="mobileMenu">
-        <div class="navigation-logo col-lg-2 col-md-3 col-sm-4 col-xs-6">
-          <a href="./index.html"><img src="pictures/SeanMooneyLogoWhiteOutlined.png"></img></a>
-        </div>
-        <div class="navigation-links">
-          <a href="index.html">Home</a>
-          <a href="portfolio.html">Portfolio</a>
-          <a href="./documents/Sean Mooney - Resume.pdf" target="_blank">Resume</a>
-          <a href="contact.html">Contact</a>
-          <a href="https://github.com/sean-mooney" target="_blank">GitHub</a>
-          <a href="javascript:void(0);" class="icon" onclick="toggleHeader()">&#9776;</a>
-        </div>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="description" content="Connecticut Web Developer for hire in Fairfield County. JavaScript, HTML, CSS, Node, Angular, Express, Mongo, SQL">
+  <meta name="author" content="Sean Mooney">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sean Mooney</title>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
+    crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400" rel="stylesheet">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+    crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="css/base.css" media="only screen and (min-width: 960px)">
+  <link rel="stylesheet" type="text/css" href="css/base-mobile.css" media="only screen and (max-width: 960px)">
+  <link rel="stylesheet" type="text/css" href="css/home.css" media="only screen and (min-width: 960px)">
+  <link rel="stylesheet" type="text/css" href="css/home-mobile.css" media="only screen and (max-width: 960px)">
+  <link rel="shortcut icon" href="pictures/favicon.ico" type="image/x-icon">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="js/header.js"></script>
+  <script src="js/index.js"></script>
+</head>
+
+<body>
+  <div class="header">
+    <div class="navigation-bar">
+      <div class="navigation-logo col-lg-2 col-md-3 col-sm-4 col-xs-6">
+        <a href="./index.html"><img src="pictures/SeanMooneyLogoWhiteOutlined.png"></img></a>
+      </div>
+      <a href="javascript:void(0);" class="burgerMenu" onclick="toggleHeader()">&#9776;</a>
+      <div class="navigation-links" id="mobileMenu">
+        <a class="currentPage" href="index.html">Home</a>
+        <a href="portfolio.html">Portfolio</a>
+        <a href="./documents/Sean Mooney - Resume.pdf" target="_blank">Resume</a>
+        <a href="contact.html">Contact</a>
+        <a href="https://github.com/sean-mooney" target="_blank">GitHub</a>
       </div>
     </div>
+  </div>
 
-    <div class="main container">
-      <div class="content row">
-        <div class="content-wrapper">
-          <div class="title-area">
-            <div class="title">
-              <h2>Sean Mooney</h2>
-            </div>
-            <div class="sub-title">
-              <h1>Full Stack Developer</h1>
-              <h3>FAST. EFFICIENT. CODE YOU CAN RELY ON.</h3>
-            </div>
-          </div>
-          <div class="arrow animated bounce" id="arrow-down">
-            <a href="#about">
-              <img width="40" height="40" alt="" src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4NCjwhLS0gR2VuZXJhdG9yOiBBZG9iZSBJbGx1c3RyYXRvciAxNi4wLjAsIFNWRyBFeHBvcnQgUGx1Zy1JbiAuIFNWRyBWZXJzaW9uOiA2LjAwIEJ1aWxkIDApICAtLT4NCjwhRE9DVFlQRSBzdmcgUFVCTElDICItLy9XM0MvL0RURCBTVkcgMS4xLy9FTiIgImh0dHA6Ly93d3cudzMub3JnL0dyYXBoaWNzL1NWRy8xLjEvRFREL3N2ZzExLmR0ZCI+DQo8c3ZnIHZlcnNpb249IjEuMSIgaWQ9IkxheWVyXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4Ig0KCSB3aWR0aD0iNTEycHgiIGhlaWdodD0iNTEycHgiIHZpZXdCb3g9IjAgMCA1MTIgNTEyIiBlbmFibGUtYmFja2dyb3VuZD0ibmV3IDAgMCA1MTIgNTEyIiB4bWw6c3BhY2U9InByZXNlcnZlIj4NCjxwYXRoIGZpbGw9IiNGRkZGRkYiIGQ9Ik0yOTMuNzUxLDQ1NS44NjhjLTIwLjE4MSwyMC4xNzktNTMuMTY1LDE5LjkxMy03My42NzMtMC41OTVsMCwwYy0yMC41MDgtMjAuNTA4LTIwLjc3My01My40OTMtMC41OTQtNzMuNjcyDQoJbDE4OS45OTktMTkwYzIwLjE3OC0yMC4xNzgsNTMuMTY0LTE5LjkxMyw3My42NzIsMC41OTVsMCwwYzIwLjUwOCwyMC41MDksMjAuNzcyLDUzLjQ5MiwwLjU5NSw3My42NzFMMjkzLjc1MSw0NTUuODY4eiIvPg0KPHBhdGggZmlsbD0iI0ZGRkZGRiIgZD0iTTIyMC4yNDksNDU1Ljg2OGMyMC4xOCwyMC4xNzksNTMuMTY0LDE5LjkxMyw3My42NzItMC41OTVsMCwwYzIwLjUwOS0yMC41MDgsMjAuNzc0LTUzLjQ5MywwLjU5Ni03My42NzINCglsLTE5MC0xOTBjLTIwLjE3OC0yMC4xNzgtNTMuMTY0LTE5LjkxMy03My42NzEsMC41OTVsMCwwYy0yMC41MDgsMjAuNTA5LTIwLjc3Miw1My40OTItMC41OTUsNzMuNjcxTDIyMC4yNDksNDU1Ljg2OHoiLz4NCjwvc3ZnPg0K" />
-            </a>
-          </div>
-          <span id="canvas-container">
-            <canvas id="canvas" class="home-canvas"></canvas>
-          </span>
-      </div>
-
-      </div>
-      <div class="about row" id="about">
-        <div class="about-photo">
-          <img src="pictures/personal-photo.jpeg"/>
-        </div>
-        <div class="about-title col-xs-12">
-          <h1>Who am I?</h1>
-        </div>
-        <div class="about-content">
-          <p class="p1 col-xs-12">Hi, my name's Sean Mooney, I'm 23 years old, and have been programming since I was 11 years old.
-            I started off by teaching myself to make my own video games with "Klik-n-Play", "GameMaker", and "Multimedia Fusion".
-            Learning to make my own games made me curious to expand my knowledge into other forms of app creation.
-            Since then I've created my own: Websites, Webapps, iOS Apps, and Android Apps, as well as more advanced video games.
-            My work is a relfection of me, personally and professionally, so I take pride in my creations.
-          </p>
-          <p class="p2 col-xs-12">
-            After graduating high school, I went on to Norwalk Community College (NCC) to study Computer Science. In the fall of 2015,
-            I graduated from NCC with my Associates in Computer Science. Since then I've gone on to complete Independent Software's A100 program
-            and work within an Agile team to develop a working prototype for Independent Software called "Project Xavier".
-          </p>
-          <p class="p3 col-xs-12">
-            Currently, I am doing freelance work building websites for clients ranging from entrepreneurs to home builders.
-            Click the button below to see my whole portfolio.<br>
-            <div class="portfolio-button-container">
-              <a href="portfolio.html"><button class="portfolio-button">PORTFOLIO</button></a>
-            </div>
-          </p>
-          <!-- <p> -->
-            <!-- <a href="https://stackoverflow.com/users/8588817/sean-mooney"> -->
-                <!-- <img src="https://stackoverflow.com/users/flair/8588817.png" width="208" height="58" alt="profile for Sean Mooney at Stack Overflow, Q&amp;A for professional and enthusiast programmers" title="profile for Sean Mooney at Stack Overflow, Q&amp;A for professional and enthusiast programmers"> -->
-            <!-- </a> -->
-          <!-- </p> -->
-        </div>
-      </div>
-      <div class="footer">
-        <div class="footer-info">
-          <h2>Sean Mooney</h2>
-          <h3>Full-Stack Developer</h3>
-          <a href="contact.html"><button class="contact-button">Contact Me</button></a>
-        </div>
+  <div class="content row main">
+    <div class="title-area">
+      <div class="sub-title">
+        <h1>Sean Mooney</h1>
+        <h2>Full-stack Developer</h2>
+        <h3>Producing high-quality websites and fluid user experiences</h3>
       </div>
     </div>
+  </div>
+  <div class="content row proficiencies">
+    <div class="proficienciesTitle">
+      <h1>Proficiencies</h1>
+    </div>
+    <div class="col-6 col-md-4 proficiencyTile bg-primary text-light">
+      <i class="fab fa-html5"></i>
+      <div class="tileText">HTML</div>
+    </div>
+    <div class="col-6 col-md-4 proficiencyTile bg-success text-light">
+      <i class="fab fa-css3-alt"></i>
+      <div class="tileText">CSS</div>
+    </div>
+    <div class="col-6 col-md-4 proficiencyTile bg-light text-danger">
+      <i class="fab fa-js"></i>
+      <div class="tileText">JavaScript</div>
+    </div>
+    <div class="col-6 col-md-4 proficiencyTile bg-white text-primary">
+      <img src="pictures/3171503.png">
+      <div class="tileText">Ionic</div>
+    </div>
+    <div class="col-6 col-md-4 proficiencyTile bg-danger text-light">
+      <i class="fab fa-angular"></i>
+      <div class="tileText">Angular</div>
+    </div>
+    <div class="col-6 col-md-4 proficiencyTile bg-info text-light">
+      <img src="pictures/graphql.png">
+      <div class="tileText">GraphQL</div>
+    </div>
+    <div class="col-6 col-md-4 proficiencyTile bg-success text-light">
+      <i class="fab fa-android"></i>
+      <div class="tileText">Android</div>
+    </div>
+    <div class="col-6 col-md-4 proficiencyTile bg-dark text-white">
+      <i class="fab fa-apple"></i>
+      <div class="tileText">iOS</div>
+    </div>
+    <div class="col-6 col-md-4 proficiencyTile bg-white text-dark">
+      <img src="pictures/mongodb.jpg">
+      <div class="tileText">MongoDB</div>
+    </div>
+    <div class="col-6 col-md-4 proficiencyTile bg-light text-dark">
+      <img src="pictures/Android-Adobe-Photoshop.png">
+      <div class="tileText">Photoshop</div>
+    </div>
+    <div class="col-12 col-md-8 resumeLink bg-dark text-light">
+      <a href="documents/Sean Mooney - Resume.pdf" target="_blank">
+        <div class="tileText">
+          View resume 
+          <i class="fas fa-angle-right"></i>
+        </div>
+      </a>
+    </div>
+  </div>
+  <div class="about row" id="about">
+    <div class="about-photo">
+      <img src="pictures/personal-photo.jpeg" />
+    </div>
+    <div class="about-title col-12">
+      <h1>About Sean</h1>
+    </div>
+    <div class="about-content">
+      <p class="p1 col-12">
+        I am a Full-stack Developer with 1 year professional experience and 10+ more of personal experience.
+      </p>
+      <p class="p2 col-12">
+        I started programming when I was young by teaching myself to make my own video games with "Klik-n-Play",
+        "GameMaker", and "Multimedia Fusion".
+        Since then I have gone on to create my own: websites, webapps, iOS apps, and Android apps, as well as more
+        advanced video games.
+        My work is a reflection of me, personally and professionally, so I take pride in my creations to ensure the
+        experience is smooth and enjoyable.
+      </p>
+      <!-- <p class="p2 col-12">
+          After graduating high school, I went on to Norwalk Community College (NCC) to study Computer Science. In the
+          fall of 2015,
+          I graduated from NCC with my Associates in Computer Science. Since then I've gone on to complete Independent
+          Software's A100 program
+          and work within an Agile team to develop a working prototype for Independent Software called "Project
+          Xavier".
+        </p> -->
+      <p class="p3 col-12">
+        Currently, I am looking for full-time work in a team environment. <a class="visitLink" href="contact.html">Visit
+          the contact page</a> if you're interested or
+        click the button below to see my portfolio.<br>
+        <div class="portfolio-button-container">
+          <a href="portfolio.html"><button class="portfolio-button">PORTFOLIO</button></a>
+        </div>
+      </p>
+      <!-- <p> -->
+      <!-- <a href="https://stackoverflow.com/users/8588817/sean-mooney"> -->
+      <!-- <img src="https://stackoverflow.com/users/flair/8588817.png" width="208" height="58" alt="profile for Sean Mooney at Stack Overflow, Q&amp;A for professional and enthusiast programmers" title="profile for Sean Mooney at Stack Overflow, Q&amp;A for professional and enthusiast programmers"> -->
+      <!-- </a> -->
+      <!-- </p> -->
+    </div>
+  </div>
+  <div class="footer">
+    <div class="footer-info">
+      <h2>Sean Mooney</h2>
+      <h3>Full-Stack Developer</h3>
+      <a href="contact.html"><button class="contact-button">Contact Me</button></a>
+    </div>
+  </div>
+</body>
 
-    <script>
-    var ALLCREDITGOESTO = "MATHIAS BERWIG, THANK YOU FOR THE CODE BELOW https://codepen.io/MathiasBerwig/";
-    var container = document.getElementById('canvas-container');
-    var newCanvas = document.querySelector('canvas');
-
-    var canvasDots = function() {
-
-      var canvas = newCanvas,
-          ctx = canvas.getContext('2d'),
-          colorDot = 'lightgreen',
-          color = 'lightgreen';
-      canvas.width = window.innerWidth;
-      canvas.height = window.innerHeight;
-      canvas.style.display = 'block';
-      ctx.fillStyle = colorDot;
-      ctx.lineWidth = .1;
-      ctx.strokeStyle = color;
-
-        var mousePosition = {
-            x: 30 * canvas.width / 100,
-            y: 30 * canvas.height / 100
-        };
-
-        var dots = {
-            nb: 600,
-            distance: 60,
-            d_radius: 150,
-            array: []
-        };
-
-        if(window.innerWidth < 960){
-          dots.nb = 350;
-          dots.distance = 40;
-          dots.d_radius = 15;
-        }
-
-        function Dot(){
-            this.x = Math.random() * canvas.width;
-            this.y = Math.random() * canvas.height;
-
-            this.vx = -.5 + Math.random();
-            this.vy = -.5 + Math.random();
-
-            this.radius = Math.random();
-        }
-
-        Dot.prototype = {
-            create: function(){
-                ctx.beginPath();
-                ctx.arc(this.x, this.y, this.radius, 0, Math.PI * 2, false);
-                ctx.fill();
-            },
-
-            animate: function(){
-                for(i = 0; i < dots.nb; i++){
-
-                    var dot = dots.array[i];
-
-                    if(dot.y < 0 || dot.y > canvas.height){
-                        dot.vx = dot.vx;
-                        dot.vy = - dot.vy;
-                    }
-                    else if(dot.x < 0 || dot.x > canvas.width){
-                        dot.vx = - dot.vx;
-                        dot.vy = dot.vy;
-                    }
-                    dot.x += dot.vx;
-                    dot.y += dot.vy;
-                }
-            },
-
-            line: function(){
-              if(window.innerWidth >= 960){
-                for(i = 0; i < dots.nb; i++){
-                    for(j = 0; j < dots.nb; j++){
-                        i_dot = dots.array[i];
-                        j_dot = dots.array[j];
-
-                        if((i_dot.x - j_dot.x) < dots.distance && (i_dot.y - j_dot.y) < dots.distance && (i_dot.x - j_dot.x) > - dots.distance && (i_dot.y - j_dot.y) > - dots.distance){
-                            if((i_dot.x - mousePosition.x) < dots.d_radius && (i_dot.y - mousePosition.y) < dots.d_radius && (i_dot.x - mousePosition.x) > - dots.d_radius && (i_dot.y - mousePosition.y) > - dots.d_radius){
-                                ctx.beginPath();
-                                ctx.moveTo(i_dot.x, i_dot.y);
-                                ctx.lineTo(j_dot.x, j_dot.y);
-                                ctx.stroke();
-                                ctx.closePath();
-                            }
-                        }
-                    }
-                }
-            }
-          }
-        };
-
-        function createDots(){
-            ctx.clearRect(0, 0, canvas.width, canvas.height);
-            for(i = 0; i < dots.nb; i++){
-                dots.array.push(new Dot());
-                dot = dots.array[i];
-
-                dot.create();
-            }
-
-            dot.line();
-            dot.animate();
-        }
-
-        window.onmousemove = function(parameter) {
-            mousePosition.x = parameter.pageX;
-            mousePosition.y = parameter.pageY;
-        }
-
-        mousePosition.x = window.innerWidth / 2;
-        mousePosition.y = window.innerHeight / 2;
-
-        setInterval(createDots, 1000/30);
-    };
-
-    window.onload = function() {
-        canvasDots();
-    };
-
-    window.addEventListener("orientationchange", function() {
-      var oldCanvas = document.getElementById('canvas');
-      container.removeChild(oldCanvas);
-      var canvas = document.createElement('canvas');
-      canvas.id = 'canvas';
-      canvas.className = "home-canvas";
-      container.appendChild(canvas);
-      newCanvas = canvas;
-      canvasDots();
-    });
-    </script>
-  </body>
 </html>
