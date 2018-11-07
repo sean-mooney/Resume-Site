@@ -1,6 +1,7 @@
 :root {
   --headerColor: #24292d;
   --titleColor: #24292d;
+  --blue: #28a745;
 }
 
 .navigation-bar {
@@ -62,7 +63,7 @@
   position: absolute;
   top: 17px;
   right: 10px;
-  color: white;
+  color: white !important;
   text-decoration: none !important;
 }
 
@@ -80,7 +81,6 @@
 
 .currentPage {
   font-weight: 600;
-  background-color: rgba(56, 64, 70, 0.4);
 }
 
 .footer {
@@ -135,7 +135,7 @@
 }
 
 .visitLink, .visitLink a {
-  color: #28a745;
+  color: var(--blue);
   font-weight: 500;
   text-decoration: none;
 }
