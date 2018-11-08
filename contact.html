@@ -5,6 +5,9 @@
     <meta name="author" content="Sean Mooney">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sean Mooney</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
+      crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
       crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/master/devicon.min.css">
@@ -40,52 +43,49 @@
   <body>
     <div class="header">
       <div class="navigation-bar">
-        <div class="navigation-logo col-lg-2 col-md-3 col-sm-4 col-xs-6">
-          <a href="./index.html"><img src="pictures/SeanMooneyLogoWhiteOutlined.png"></img></a>
+        <div class="navigation-logo col-lg-2 col-md-3 col-sm-4 col-6">
+          <a href="./index.html"><img src="pictures/SeanMooneyLogoWhiteOutlined.png"></a>
         </div>
         <a href="javascript:void(0);" class="burgerMenu" onclick="toggleHeader()">&#9776;</a>
         <div class="navigation-links" id="mobileMenu">
           <a href="index.html">Home</a>
           <a href="portfolio.html">Portfolio</a>
           <a href="./documents/Sean Mooney - Resume.pdf" target="_blank">Resume</a>
-          <a href="contact.html">Contact</a>
+          <a class="currentPage" href="contact.html">Hire Sean</a>
           <a href="https://github.com/sean-mooney" target="_blank">GitHub</a>
         </div>
       </div>
     </div>
 
-    <div class="main container">
+    <div class="main container bg-light">
       <div class="content row">
         <div class="title">
-          <h1>Thanks for your interest!</h1>
+          <h1>Thank you for your interest!</h1>
         </div>
         <div class="description">
           <h2>Get in Touch</h2><br>
 
           <form class="contact-form" name="contact-form" action="php/send_form_email.php" onsubmit="return validateForm()" method="post">
-            <div class="name-wrapper">
-              <label for="name">Your Name *</label><br>
-              <input type="text" id="name" name="name"></input>
+            <div class="input-wrapper">
+              <input type="text" id="name" placeholder="Your name *" name="name">
             </div>
 
-            <div class="email-wrapper">
-              <label for="email">Your Email *</label><br>
-              <input type="text" id="email" name="email"></input>
+            <div class="input-wrapper">
+              <input type="text" id="email" placeholder="Email *" name="email">
             </div>
 
-            <div class="phone-wrapper">
-              <label for="lastName">Your Phone</label><br>
-              <input type="text" id="phone" name="phone"></input>
+            <div class="input-wrapper">
+              <input type="text" id="phone" placeholder="Phone if you'd like..." name="phone">
             </div>
 
             <div class="message-wrapper">
               <label for="message">Message *</label><br>
               <textarea id="message" name="message" maxlength="1000" cols="25" rows="6"></textarea><br>
             </div>
-            <p style="text-align: center;">* = Required</p>
+            <p class="message">* = Required</p>
 
             <div class="button-wrapper">
-              <input class="" type="submit" value="Submit"></input>
+              <input class="" type="submit" value="Submit">
             </div>
           </form>
 

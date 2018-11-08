@@ -15,13 +15,18 @@
   width: 100%;
   background-color: #e6e6e6;
   background-size: 100% 100%;
+  max-width: unset;
 }
 
 .content {
-  margin: 60px 0 0 0;
-  padding: 30px 1% 10% 1%;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  padding: 30px 1% 5% 1%;
   box-shadow: 0 2px 6px rgba(100, 100, 100, 0.5);
-  background: rgba(255,255,255,0.92);
   color: black;
 }
 
@@ -32,16 +37,21 @@ h1 {
 .description {
   font-family: "HelveticaNueue-Light";
   font-size: 16px;
-  padding-bottom: 30px;
+  padding: 0 20px 30px;
+  width: 100%;
+}
+
+.title {
+  width: 100%;
 }
 
 .title h1 {
-  color: #4000a3;
+  color: var(--titleColor);
   text-align: center;
 }
 
 .description h2 {
-  color: #4000a3;
+  color: var(--titleColor);
   text-align: center;
   margin-top: 30px;
   font-family: Montserrat;
@@ -55,8 +65,12 @@ input, textarea {
     border: 1px solid lightgray;
 }
 
-.name-wrapper, .email-wrapper, .phone-wrapper {
-  padding: 0 15px 0 15px;
+.input-wrapper {
+  padding: 0 10vw;
+}
+
+.input-wrapper input {
+  padding: 6px 12px;
 }
 
 form input[type="text"], form textarea {
@@ -64,8 +78,16 @@ form input[type="text"], form textarea {
 }
 
 .message-wrapper {
-  padding-top: 20px;
+  padding: 20px 3vw 20px;
   text-align: center;
+}
+
+.message {
+  text-align: center;
+}
+
+#message {
+  padding: 12px 16px;
 }
 
 .button-wrapper {
@@ -75,7 +97,7 @@ form input[type="text"], form textarea {
 .button-wrapper input, .button-wrapper button {
   margin-top: 25px;
   width: 200px;
-  background-color: #4000a3;
+  background-color: var(--mainColor);
   color: white;
   border: none;
   letter-spacing: 2px;
@@ -95,7 +117,7 @@ form input[type="text"], form textarea {
 }
 
 .contact-form div {
-  margin: 20px 40px;
+  margin: 20px auto;
   /*text-align: center;*/
 }
 
@@ -117,28 +139,35 @@ textarea {
   padding: 0 0 0 0;
   height: auto;
   width: 100%;
+  max-width: unset;
   background-color: #e6e6e6;
   background-size: 100% 100%;
 }
 
 .content-sent {
-  margin: 73px 0 0 0;
+  margin: 0;
   padding: 10vh 1% 10% 1%;
   box-shadow: 0 2px 6px rgba(100, 100, 100, 0.5);
   background: rgba(255,255,255,0.92);
-  color: #4000a3;
+  color: var(--mainColor);
   height: 80vh;
 }
 
 .description-sent {
-  margin-top: 10vh;
   text-align: center;
   font-weight: 200;
   font-family: Raleway;
   font-size: 16px;
+  width:100%;
+  padding: 0 24px;
 }
 
-.description-sent .button-wrapper {
+.description-sent h3:first-child {
+  margin-bottom: 20px;
+}
+
+.button-wrapper {
   margin-top: 50px;
   margin-bottom: 50px;
+  margin: 0 auto;
 }

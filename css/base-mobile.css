@@ -1,7 +1,7 @@
 :root {
   --headerColor: #24292d;
   --titleColor: #24292d;
-  --blue: #28a745;
+  --mainColor: #28a745;
 }
 
 .navigation-bar {
@@ -135,7 +135,7 @@
 }
 
 .visitLink, .visitLink a {
-  color: var(--blue);
+  color: var(--mainColor);
   font-weight: 500;
   text-decoration: none;
 }
