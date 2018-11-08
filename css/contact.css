@@ -10,22 +10,23 @@
 
 .main {
   margin: 0 0 0 0;
+  padding: 0 0 0 0;
   height: auto;
   width: 100%;
-  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#4000a3+0,d8543c+100 */
-  background: #4000a3; /* Old browsers */
-  background: -moz-linear-gradient(-45deg, #4000a3 0%, #d8543c 100%); /* FF3.6-15 */
-  background: -webkit-linear-gradient(-45deg, #4000a3 0%,#d8543c 100%); /* Chrome10-25,Safari5.1-6 */
-  background: linear-gradient(135deg, #4000a3 0%,#d8543c 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4000a3', endColorstr='#d8543c',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+  background-color: #e6e6e6;
   background-size: 100% 100%;
+  max-width: unset;
 }
 
 .content {
-  margin: 20vh 25% 0 25%;
-  padding: 30px 3% 5% 3%;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  padding: 30px 1% 5% 1%;
   box-shadow: 0 2px 6px rgba(100, 100, 100, 0.5);
-  background: rgba(255,255,255,0.92);
   color: black;
 }
 
@@ -35,28 +36,46 @@
 
 h1 {
   font-family: Raleway;
-  color: #4000a3;
 }
 
 .description {
   font-family: "HelveticaNueue-Light";
   font-size: 16px;
+  padding: 0 20px 30px;
+  width: 100%;
+  max-width: 1000px;
+}
+
+.title {
+  width: 100%;
+}
+
+.title h1 {
+  color: var(--titleColor);
+  text-align: center;
 }
 
 .description h2 {
+  color: var(--titleColor);
   text-align: center;
   margin-top: 30px;
   font-family: Montserrat;
-  color: #4000a3;
-
 }
 
 form {
   margin: 0 0% 20px 0%;
 }
 
-.name-wrapper, .email-wrapper, .phone-wrapper {
-  padding: 0 100px 0 100px;
+input, textarea {
+    border: 1px solid lightgray;
+}
+
+.input-wrapper {
+  padding: 0 10vw;
+}
+
+.input-wrapper input {
+  padding: 6px 12px;
 }
 
 form input[type="text"], form textarea {
@@ -64,8 +83,16 @@ form input[type="text"], form textarea {
 }
 
 .message-wrapper {
-  padding-top: 20px;
+  padding: 20px 3vw 20px;
   text-align: center;
+}
+
+.message {
+  text-align: center;
+}
+
+#message {
+  padding: 12px 16px;
 }
 
 .button-wrapper {
@@ -73,9 +100,9 @@ form input[type="text"], form textarea {
 }
 
 .button-wrapper input, .button-wrapper button {
-  margin-top: 50px;
-  width: 250px;
-  background-color: #4000a3;
+  margin-top: 25px;
+  width: 200px;
+  background-color: var(--mainColor);
   color: white;
   border: none;
   letter-spacing: 2px;
@@ -95,47 +122,57 @@ form input[type="text"], form textarea {
 }
 
 .contact-form div {
-  margin: 20px 40px;
+  margin: 20px auto;
   /*text-align: center;*/
+}
+
+textarea {
+  height: 200px;
 }
 
 .message-wrapper textarea {
   resize: none;
+}
+
+.footer {
+  margin-top: 0px; /*Page Specific*/
   height: 200px;
 }
 
 .main-sent {
   margin: 0 0 0 0;
+  padding: 0 0 0 0;
   height: auto;
   width: 100%;
+  max-width: unset;
   background-color: #e6e6e6;
-  background: #4000a3; /* Old browsers */
-  background: -moz-linear-gradient(-45deg, #4000a3 0%, #d8543c 100%); /* FF3.6-15 */
-  background: -webkit-linear-gradient(-45deg, #4000a3 0%,#d8543c 100%); /* Chrome10-25,Safari5.1-6 */
-  background: linear-gradient(135deg, #4000a3 0%,#d8543c 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4000a3', endColorstr='#d8543c',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
-  background-size: 100% 100%;
   background-size: 100% 100%;
 }
 
 .content-sent {
-  text-align: center;
-  height: 60vh;
-  margin: 20vh 25% 0 25%;
-  padding: 30px 3% 5% 3%;
+  margin: 0;
+  padding: 10vh 1% 10% 1%;
   box-shadow: 0 2px 6px rgba(100, 100, 100, 0.5);
   background: rgba(255,255,255,0.92);
-  color: #23345e;
+  color: var(--mainColor);
+  height: 80vh;
 }
 
 .description-sent {
-  margin-top: 10vh;
   text-align: center;
   font-weight: 200;
   font-family: Raleway;
   font-size: 16px;
+  width:100%;
+  padding: 0 24px;
 }
 
-.description-sent .button-wrapper {
+.description-sent h3:first-child {
+  margin-bottom: 20px;
+}
+
+.button-wrapper {
   margin-top: 50px;
+  margin-bottom: 50px;
+  margin: 0 auto;
 }

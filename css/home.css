@@ -89,32 +89,20 @@
 
 .main {
   margin: 0px 0px 0px 0px;
-  height: 100%;
+  height: 45%;
   width: 100%;
   background-size: 100% 100%;
-  background-color: #4000a3;
-}
-
-.home-canvas {
-  position: relative;
-  z-index: 0;
-  width: 100%;
-  height: 100%;
-}
-
-.content-wrapper {
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  z-index: 2;
+  background-color: var(--headerColor);
 }
 
 .title-area {
-  position: absolute;
   width: 100%;
-  top: 27%;
   text-align: center;
   z-index: 3;
+    display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
 }
 
 .title {
@@ -139,56 +127,166 @@
   margin-left:-20px;
 }
 
-.about {
-  padding-top: 60px;
-  top: 100%;
-  margin: 20px 10% 20px 10%;
-  position: relative;
-  line-height: 2;
+.proficiencies {
+  background: var(--headerColor);
+}
+
+.proficienciesContent {
+  max-width: 1400px;
+  margin: auto;
+}
+
+.proficienciesTitle {
+  width: 100%;
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   background-color: white;
-  z-index: 5;
+}
+.proficiencyTile {
+  min-height: 30vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.proficiencyTile i, .proficiencyTile img {
+  font-size: 12em;
+  -webkit-transition: all .3s ease;
+  -moz-transition: all .3s ease;
+  transition: all .3s ease;
+}
+
+
+.proficiencyTile img {
+  width: 18vh;
+  height: auto;
+  padding-top: 5px;
+}
+
+.proficiencyTile .tileText {
+  width: 100%;
+  text-align: center;
+  font-weight: 500;
+  font-size: 2vw;
+}
+
+.proficiencyTile:hover i {
+  font-size: 10em;
+}
+
+.proficiencyTile:hover img {
+  width: 15vh;
+}
+
+.resumeLink {
+  min-height: 30vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  
+  font-size: 20px;
+  width: 100%;
+}
+
+.resumeLink a {
+  width: 100%;  
+  text-decoration: none;
+  height: auto;
+}
+
+.resumeLink a div {
+  display: flex;
+  align-items: baseline;
+  justify-content: center;
+  color: white;
+}
+
+
+.resumeLink a .tileText i {
+  -webkit-transition: all .3s ease;
+  -moz-transition: all .3s ease;
+  transition: all .3s ease;
+  max-width: 20px;
+  width: 100%;
+  font-size: 20px;
+}
+
+.resumeLink a .tileText {
+  width: 100%;
+  text-align: right;
+  font-size: 3vw;
+}
+
+.resumeLink:hover a i {
+  max-width: 35px;
 }
 
 .footer {
   z-index: 6;
 }
 
+.about {
+  margin: 20px 10% 20px 10%;
+  position: relative;
+  line-height: 2;
+  background-color: white;
+  font-family: 'Montserrat';
+}
+
 .about-photo {
   text-align: center;
   margin: 50px 0 0 0;
   padding: 0 0 0 0;
+  width: 100%;
 }
 
 .about-photo img {
-  width: 16%;
+  width: 20%;
   height: auto;
-  border-radius: 50%;
+  border: 4px solid var(--headerColor);
 }
 
 .about-title {
   margin-top: 15px;
   margin-bottom: 30px;
   text-align: center;
+  width: 100%;
+}
+
+.proficienciesTitle {
+  width: 100%;
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .about-title h1 {
-  color: #4000a3;
+  color: var(--titleColor);
   font-size: 40px;
   font-family: Montserrat;
 }
 
 .about-content {
-  font-family: "HelveticaNeue-Light";
-  font-size: 18px;
-  font-weight: 400;
+  font-size: 16px;
+  font-weight: 300;
+  padding: 0 30px;
+}
+
+.p1, .p2, .p3 {
+  padding: 0;
 }
 
 .p2, .p3 {
   margin-top: 30px;
 }
 
-.portfolio-button-container {
-  margin-left: 15px;
+.p2, .p3 {
+  margin-top: 30px;
 }
 
 .portfolio-button {
@@ -213,4 +311,10 @@
 .portfolio-button:hover {
   background-color: black;
   color: white;
+}
+
+@media (min-width: 1500px) {
+  .proficiencyTile, .resumeLink {
+    min-height: 20vw;
+  }
 }

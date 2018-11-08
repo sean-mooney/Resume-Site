@@ -13,88 +13,92 @@ body {
 }
 
 .main {
-  margin: 0 0 0 0;
+  margin: 0;
+  padding: 0;
   height: auto;
   width: 100%;
-  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#4000a3+0,d8543c+100 */
-  background: #4000a3; /* Old browsers */
-  background: -moz-linear-gradient(-45deg, #4000a3 0%, #d8543c 100%); /* FF3.6-15 */
-  background: -webkit-linear-gradient(-45deg, #4000a3 0%,#d8543c 100%); /* Chrome10-25,Safari5.1-6 */
-  background: linear-gradient(135deg, #4000a3 0%,#d8543c 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4000a3', endColorstr='#d8543c',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+  background-color: #e6e6e6;
   background-size: 100% 100%;
+  max-width: unset;
 }
 
 .content {
-  margin: 20vh 12% 0 12%;
-  padding: 10px 3% 75px 3%;
+  margin: 0px;
+  padding: 20px 5% 50px 5%;
   text-align: center;
-  color: #444;
   box-shadow: 0 2px 6px rgba(100, 100, 100, 0.5);
-  background: rgba(255,255,255,0.92); /* For browsers that do not support gradients */
+  background: rgba(255,255,255,0.9);
 }
 
-.main-title  h1, .main-title {
-  padding-top: 10px;
-  padding-bottom: 10px;
-  color: #4000a3;
-  font-size: 50px;
+.projectsTitle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 150px;
+  background-color: var(--headerColor) !important;
+}
+
+.main-title {
+  color: var(--titleColor);
+}
+
+.project-list {
+  max-width: 1000px;
+  margin: auto;
 }
 
 .project-item {
-  margin: 0 0 0 0;
-  padding: 10px 20px 30px 30px;
+  margin: 0;
+  padding: 40px 0;
 }
 
 .project-title {
   margin-bottom: 20px;
-  padding: 0 0 0 0;
+  padding: 0;
+  text-align: left;
 }
 
 .project-title h2 {
-  color: #4000a3;
+  color: var(--titleColor);
   font-family: Montserrat;
   font-size: 32px;
 }
 
-.project-list {
-  text-align: left;
-}
-
 .project-desc {
+  padding: 0;
+  text-align: left;
   font-family: "HelveticaNeue-Light";
-  font-size: 18px;
-  padding: 0 0 0 0;
   line-height: 2;
 }
 
 .project-images {
-  padding: 20px 0 0 0;
-  /*margin-left: 3%;*/
-  /*margin-right: 5%;*/
+  padding-top: 20px;
+  margin: 0;
+}
+
+.project-images a {
+  padding: 5px;
 }
 
 .project-images .thumbnail {
   border: none;
-  background-color: rgba(0,0,0,0);
-  width: 200px;
-  height: 200px;
+  width: 100%;
+  height: auto;
 }
 
 .project-images .thumbnail-tall {
-  width: 200px;
-  height: 300px;
-}
-
-.project-link a {
-  text-align: center;
-  display: block;
+  height: 250px;
+  padding-top: 10px;
+  /*padding: 10px 10px 0 10px;*/
+  /*margin: 10px 10px 0 10px;*/
 }
 
 .more-info-button {
-  margin-top: 50px;
-  width: 250px;
-  background-color: #4000a3;
+  margin-top: 20px;
+  margin-bottom: 50px;
+  width: 200px;
+  background-color: var(--mainColor);
   color: white;
   border: none;
   letter-spacing: 2px;
@@ -115,6 +119,10 @@ body {
   color: black;
 }
 
+.footer {
+  margin-top: 0px; /*Page Specific*/
+}
+
 .lightbox {
 	/** Default lightbox to hidden */
 	display: none;
@@ -128,26 +136,6 @@ body {
 	top: 0;
 	left: 0;
 	background: rgba(0,0,0,0.8);
-
-  -webkit-user-select: none;  /* Chrome all / Safari all */
-  -moz-user-select: none;     /* Firefox all */
-  -ms-user-select: none;      /* IE 10+ */
-  user-select: none;          /* Likely future */
-}
-
-.lightbox img {
-	/** Pad the lightbox image */
-	max-width: 75vw;
-	max-height: 75vh;
-	margin: 6% 5% 10% 1.5%;
-  display: inline;
-}
-
-.wam img {
-  max-width: 70vw;
-  max-height: 80vh;
-  margin-top: 5%;
-  display: inline;
 }
 
 .lightbox:target {
@@ -163,39 +151,116 @@ body {
 } */
 
 .lightbox span {
-  /*Transitions*/
   -o-transition:.3s;
   -ms-transition:.3s;
   -moz-transition:.3s;
   -webkit-transition:.3s;
-  /* main property */
   transition:.3s;
-  margin-top: 49vh;
-  padding: 20px 10px;
-  background: rgba(0, 0, 0, 0.2);
-  color: white;
-  font-size: 2vw;
+  background: rgba(0, 0, 0, 0.5);
   text-decoration: none;
   z-index: 1000;
-  display: inline-block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  top: 40%;
+  width: 100px;
+  height: 200px;
+  left: 20px;
+}
+
+.lightbox span i {
+  color: white;
+  font-size: 30px;
 }
 
 .lightbox span:hover {
   background: rgba(0, 0, 0, 0.9);
 }
 
-.left {
-  float: left;
-}
 
 .right {
-  float: right;
-  position: absolute;
-  margin-left: 46.5%;
+  left: unset !important;
+  right: 20px;
 }
 
 .lightbox a {
   width: 100vw;
   height: 100vh;
   display: block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
+
+
+@media screen and (orientation:portrait) {
+  /* .lightbox img {
+    max-width: 80%;
+    height: auto;
+    margin: -75% 5%;
+    display: inline;
+  } */
+
+  #SLT1 img, #SLT2 img, #SLT3 img {
+    position: fixed;
+    top: auto;
+    left: auto;
+    max-width: 80%;
+    height: auto;
+    display: block;
+    margin: 0;
+  }
+
+  #WAM1 img, #WAM2 img, #WAM3 img {
+    position: fixed;
+    top: auto;
+    left: auto;
+    max-width: 50%;
+    height: auto;
+    display: block;
+    margin: 0;
+  }
+
+}
+
+@media screen and (orientation:landscape) {
+  .lightbox img {
+  	/** Pad the lightbox image */
+  	width: 75%;
+  	height: 70%;
+  	margin-top: 13%;
+  }
+
+  .lightbox {
+    /* display: flex; */
+    align-items: center;
+    justify-content: center;
+  }
+
+  #WAM1 img, #WAM2 img, #WAM3 img {
+    position: fixed;
+    left: auto;
+    top: auto;
+    max-width: 20%;
+    height: auto;
+    display: block;
+    margin: 0;
+  }
+
+  #SLT1 img, #SLT2 img, #SLT3 img {
+    position: fixed;
+    left: auto;
+    top: auto;
+    max-width: 50%;
+    height: auto;
+    display: block;
+    margin: 0;
+  }
+
+  .right {
+    float: right;
+    position: absolute;
+    margin-left: 45vw;
+  }
+ }
