@@ -140,6 +140,18 @@
   text-decoration: none;
 }
 
+.selectDisable {
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+}
+
+.cursorPointer {
+  cursor: pointer;
+}
+
 @media screen and (orientation:landscape) {
   .header img {
     margin-left: 0;

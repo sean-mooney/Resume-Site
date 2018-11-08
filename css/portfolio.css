@@ -158,9 +158,9 @@ body {
 	display: block;
 }
 
-.lightbox:target ~ body {
+/* .lightbox:target ~ body {
   overflow: hidden;
-}
+} */
 
 .lightbox span {
   /*Transitions*/
