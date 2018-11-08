@@ -128,3 +128,24 @@
   -o-user-select: none;
   user-select: none;
 }
+
+.hireSean {
+  color: white !important;
+  background-color: black;
+  padding: 16px 10px !important;
+  -webkit-transition: all 0.3s ease-out;
+  -moz-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+  border-radius: 5px;
+}
+
+.hireSean:hover {
+  color: black !important;
+  background-color: white;
+  padding: 16px 10px !important;
+  -webkit-transition: all 0.3s ease-out;
+  -moz-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+}

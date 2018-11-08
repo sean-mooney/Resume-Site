@@ -61,25 +61,26 @@
 }
 
 .sub-title h1 {
-  font-family: Montserrat;
-  font-size: 80px;
+  font-family: 'Montserrat';
+  font-size: 32px;
+  font-weight: 800;
+  color: white;
+  padding-bottom: 10px;
+}
+
+.sub-title h2 {
+  font-family: 'Montserrat';
+  font-size: 50px;
   font-weight: 800;
   color: white;
 }
 
-.title h2 {
-  font-family: Raleway;
-  font-size: 50px;
-  color: white;
-  font-weight: 700;
-}
-
 .sub-title h3 {
-  padding-top: 2px;
-  font-family: "HelveticaNeue-Light";
-  font-size: 30px;
+  padding-top: 20px;
+  font-family: 'Montserrat';
+  font-size: 22px;
   color: white;
-  font-weight: 400;
+  font-weight: 300;
 }
 
 .container {
