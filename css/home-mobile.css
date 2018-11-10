@@ -198,13 +198,13 @@
   font-weight: 500;
 }
 
-.proficiencyTile:hover i {
+/* .proficiencyTile:hover i {
   font-size: 5em;
 }
 
 .proficiencyTile:hover img {
   width: 7vh;
-}
+} */
 
 .resumeLink {
   min-height: 30vw;
@@ -245,9 +245,9 @@
   text-align: right;
 }
 
-.resumeLink:hover a i {
+/* .resumeLink:hover a i {
   max-width: 35px;
-}
+} */
 @media (max-width: 400px) {
   .proficiencyTile i {
     font-size: 4em;
@@ -257,7 +257,7 @@
     width: 7vh;
   }
 
-  .proficiencyTile:hover i {
+  /* .proficiencyTile:hover i {
     font-size: 3em;
   }
 
@@ -266,6 +266,6 @@
   }
   .resumeLink:hover i {
     font-size: 1em;
-  }
+  } */
   
 }

@@ -34,10 +34,10 @@
   transition: max-height 0.15s linear;
   overflow:hidden;
   width: 100%;
-  background: #515558;
+  /* background: #515558;
   background: -moz-linear-gradient(top, var(--headerColor) 0%, #4b4f51 100%);
   background: -webkit-linear-gradient(top, var(--headerColor) 0%,#4b4f51 100%);
-  background: linear-gradient(to bottom, var(--headerColor) 0%,#4b4f51 100%);
+  background: linear-gradient(to bottom, var(--headerColor) 0%,#4b4f51 100%); */
 }
 
 .navigation-links.responsive {
