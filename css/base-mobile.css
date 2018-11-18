@@ -151,7 +151,114 @@
 .cursorPointer {
   cursor: pointer;
 }
+.flip-card {
+  background-color: transparent;
+  width: 300px;
+  height: 200px;
+  border: 1px solid #f1f1f1;
+  perspective: 1000px;
+}
 
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.flip-card-back {
+  color: white;
+  transform: rotateY(180deg);
+}
+
+.flip-card-back * {
+  width: 100% !important;
+}
+
+.rotate-card .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.bg-orange {
+  background-color: #F16529 !important;
+}
+
+.bg-yellow {
+  background-color: #F0DB4F !important;
+}
+
+.bg-black {
+  background-color: #000 !important;
+}
+
+.lightbox {
+	display: none;
+
+	position: fixed;
+	z-index: 999;
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	top: 0;
+	left: 0;
+	background: rgba(0,0,0,0.8);
+}
+
+.lightbox:target {
+	outline: none;
+
+	display: block;
+}
+
+.lightbox span {
+  -o-transition:.3s;
+  -ms-transition:.3s;
+  -moz-transition:.3s;
+  -webkit-transition:.3s;
+  transition:.3s;
+  background: rgba(0, 0, 0, 0.5);
+  text-decoration: none;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  top: 40%;
+  width: 100px;
+  height: 200px;
+  left: 20px;
+}
+
+.lightbox span i {
+  color: white;
+  font-size: 30px;
+}
+
+.lightbox span:hover {
+  background: rgba(0, 0, 0, 0.9);
+}
+
+.lightbox a {
+  width: 100vw;
+  height: 100vh;
+  display: block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 @media screen and (orientation:landscape) {
   .header img {
     margin-left: 0;

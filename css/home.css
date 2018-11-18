@@ -106,6 +106,9 @@
   justify-content: center;
 }
 
+.proficiencyImgFull {
+  width: 100%;
+}
 .title {
   color: white;
 }

@@ -22,9 +22,6 @@
 .navigation-logo {
   margin-left: 5px;
 }
-/* .currentPage {
-  font-weight: 700 !important;
-} */
 
 .navigation-links {
   text-align: right;
@@ -74,12 +71,10 @@
   font-size: 14px;
   font-weight: 500;
   padding: 10px 5px 10px 5px;
-  /*Transitions*/
   -o-transition:.3s;
   -ms-transition:.3s;
   -moz-transition:.3s;
   -webkit-transition:.3s;
-  /* main property */
   transition:.3s;
 }
 
@@ -151,16 +146,14 @@
   transition: all 0.3s ease-out;
 }
 
-/* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
 .flip-card {
   background-color: transparent;
   width: 300px;
   height: 200px;
   border: 1px solid #f1f1f1;
-  perspective: 1000px; /* Remove this if you don't want the 3D effect */
+  perspective: 1000px;
 }
 
-/* This container is needed to position the front and back side */
 .flip-card-inner {
   position: relative;
   width: 100%;
@@ -170,11 +163,6 @@
   transform-style: preserve-3d;
 }
 
-/* Do an horizontal flip when you move the mouse over the flip box container */
-.flip-card:active  {
-}
-
-/* Position the front and back side */
 .flip-card-front, .flip-card-back {
   position: absolute;
   width: 100%;
@@ -186,7 +174,6 @@
   flex-wrap: wrap;
 }
 
-/* Style the back side */
 .flip-card-back {
   color: white;
   transform: rotateY(180deg);
@@ -213,10 +200,8 @@
 }
 
 .lightbox {
-	/** Default lightbox to hidden */
 	display: none;
 
-	/** Position and style */
 	position: fixed;
 	z-index: 999;
 	width: 100%;
@@ -228,16 +213,10 @@
 }
 
 .lightbox:target {
-	/** Remove default browser outline */
 	outline: none;
 
-	/** Unhide lightbox **/
 	display: block;
 }
-
-/* .lightbox:target ~ body {
-  overflow: hidden;
-} */
 
 .lightbox span {
   -o-transition:.3s;
@@ -265,12 +244,6 @@
 
 .lightbox span:hover {
   background: rgba(0, 0, 0, 0.9);
-}
-
-
-.right {
-  left: unset !important;
-  right: 20px;
 }
 
 .lightbox a {
