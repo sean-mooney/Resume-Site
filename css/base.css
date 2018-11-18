@@ -254,3 +254,11 @@
   align-items: center;
   justify-content: center;
 }
+
+.margin-top {
+  margin-top: 16px;
+}
+
+.margin-top-more {
+  margin-top: 32px;
+}
