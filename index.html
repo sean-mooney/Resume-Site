@@ -52,51 +52,138 @@
     <div class="proficienciesTitle">
       <h1>Proficiencies</h1>
     </div>
-  <div class="proficienciesContent row">
-      <div class="col-6 col-md-4 proficiencyTile bg-primary text-light">
-        <i class="fab fa-html5"></i>
-        <div class="tileText">HTML</div>
+    <div class="proficienciesContent row">
+      <div class="col-6 col-md-4 proficiencyTile bg-orange text-light flip-card" onclick="flipCard(this)">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <i class="fab fa-html5"></i>
+            <div class="tileText">HTML</div>
+          </div>
+          <div class="flip-card-back">
+            <h1>HTML5</h1>
+            <p>I know HTML</p>
+          </div>
+        </div>
       </div>
-      <div class="col-6 col-md-4 proficiencyTile bg-success text-light">
-        <i class="fab fa-css3-alt"></i>
-        <div class="tileText">CSS</div>
+      <div class="col-6 col-md-4 proficiencyTile bg-primary text-light flip-card" onclick="flipCard(this)">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <i class="fab fa-css3-alt"></i>
+            <div class="tileText">CSS</div>
+          </div>
+          <div class="flip-card-back">
+            <h1>CSS3</h1>
+            <p>HTML as well as CSS</p>
+          </div>
+        </div>
       </div>
-      <div class="col-6 col-md-4 proficiencyTile bg-white text-danger">
-        <i class="fab fa-js"></i>
-        <div class="tileText">JavaScript</div>
+      <div class="col-6 col-md-4 proficiencyTile bg-yellow text-light flip-card" onclick="flipCard(this,'javascript')">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <i class="fab fa-js"></i>
+            <div class="tileText">JavaScript</div>
+          </div>
+          <div class="flip-card-back">
+            <h1>John Doe</h1>
+            <p>Architect & Engineer</p>
+            <p>We love that guy</p>
+          </div>
+        </div>
       </div>
-      <div class="col-6 col-md-4 proficiencyTile bg-white text-primary">
-        <img src="pictures/3171503.png">
-        <div class="tileText">Ionic</div>
+      <div class="col-6 col-md-4 proficiencyTile bg-white text-primary flip-card" onclick="flipCard(this)">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <img src="pictures/3171503.png">
+            <div class="tileText">Ionic</div>
+          </div>
+          <div class="flip-card-back">
+            <p class="text-dark">$ ionic serve</p>
+          </div>
+        </div>
       </div>
-      <div class="col-6 col-md-4 proficiencyTile bg-danger text-light">
-        <i class="fab fa-angular"></i>
-        <div class="tileText">Angular</div>
+      <div class="col-6 col-md-4 proficiencyTile bg-danger text-light flip-card" onclick="flipCard(this)">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <i class="fab fa-angular"></i>
+            <div class="tileText">Angular</div>
+          </div>
+          <div class="flip-card-back">
+            <p>*ngFor="let proficency of proficiencies;"</p>
+            <p>{{proficency.quote}}</p>
+          </div>
+        </div>
       </div>
-      <div class="col-6 col-md-4 proficiencyTile bg-info text-light">
-        <img src="pictures/graphql.png">
-        <div class="tileText">GraphQL</div>
+      <div class="col-6 col-md-4 proficiencyTile bg-white text-dark flip-card" onclick="flipCard(this)">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <img src="pictures/graphql.png">
+            <div class="tileText">GraphQL</div>
+          </div>
+          <div class="flip-card-back">
+            <p class="text-dark">query { proficiency }</p>
+            <div class="portfolio-button-container ">
+              <a href="https://launchpad.graphql.com/xqmmw7nnql" target="_blank"><button class="portfolio-button cursorPointer">View
+                  result</button></a>
+            </div>
+          </div>
+        </div>
       </div>
-      <div class="col-6 col-md-4 proficiencyTile bg-success text-light">
-        <i class="fab fa-android"></i>
-        <div class="tileText">Android</div>
+      <div class="col-6 col-md-4 proficiencyTile bg-white text-success flip-card" onclick="flipCard(this)">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <i class="fab fa-android"></i>
+            <div class="tileText">Android</div>
+          </div>
+          <div class="flip-card-back">
+            <h1 class="text-dark">Android</h1>
+            <p class="text-dark">Love me some Android Studio</p>
+          </div>
+        </div>
       </div>
-      <div class="col-6 col-md-4 proficiencyTile bg-dark text-white">
-        <i class="fab fa-apple"></i>
-        <div class="tileText">iOS</div>
+      <div class="col-6 col-md-4 proficiencyTile bg-black text-white flip-card" onclick="flipCard(this)">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <i class="fab fa-apple"></i>
+            <div class="tileText">iOS</div>
+          </div>
+          <div class="flip-card-back">
+            <h1 class="text-light">iOS</h1>
+            <p class="text-light">Xcode is fun</p>
+          </div>
+        </div>
       </div>
-      <div class="col-6 col-md-4 proficiencyTile bg-white text-dark">
-        <img src="pictures/mongodb.jpg">
-        <div class="tileText">MongoDB</div>
+      <div class="col-6 col-md-4 proficiencyTile bg-white text-dark flip-card" onclick="flipCard(this)">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <img src="pictures/mongodb.jpg">
+            <div class="tileText">MongoDB</div>
+          </div>
+          <div class="flip-card-back">
+            <p class="text-dark">db.proficiencies.find( {proficiency: "MongoDB"} )</p>
+          </div>
+        </div>
       </div>
-      <div class="col-6 col-md-4 proficiencyTile bg-white text-dark">
-        <img src="pictures/Android-Adobe-Photoshop.png">
-        <div class="tileText">Photoshop</div>
+      <div class="col-6 col-md-4 proficiencyTile bg-white text-dark flip-card" onclick="flipCard(this)">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <img src="pictures/Android-Adobe-Photoshop.png">
+            <div class="tileText">Photoshop</div>
+          </div>
+          <div class="flip-card-back">
+            <h1 class="text-dark">Example work</h1>
+            <a href="#collage" class="thumbnail">
+              <img src="pictures/collage.jpg">
+            </a>
+          </div>
+        </div>
       </div>
+      <span class="lightbox" id="collage">
+        <a href="#_"><img class="selectDisable" src="pictures/collage.jpg"></a>
+      </span>
       <div class="col-12 col-md-8 resumeLink bg-dark text-light">
         <a href="documents/Sean Mooney - Resume.pdf" target="_blank">
           <div class="tileText">
-            View resume 
+            View resume
             <i class="fas fa-angle-right"></i>
           </div>
         </a>
@@ -112,7 +199,7 @@
     </div>
     <div class="about-content">
       <p class="p1 col-12">
-        I am a Full-stack Developer with 1 year professional experience and 10+ more working on personal projects.
+        I am a Full-stack Developer with 1 year professional experience.
       </p>
       <p class="p2 col-12">
         I started programming when I was young by teaching myself to make my own video games with "Klik-n-Play",

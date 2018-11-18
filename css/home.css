@@ -147,22 +147,19 @@
 }
 .proficiencyTile {
   min-height: 30vw;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   flex-wrap: wrap;
 }
 
 .proficiencyTile i, .proficiencyTile img {
   font-size: 12em;
-  -webkit-transition: all .3s ease;
+  /* -webkit-transition: all .3s ease;
   -moz-transition: all .3s ease;
-  transition: all .3s ease;
+  transition: all .3s ease; */
 }
 
 
 .proficiencyTile img {
-  width: 18vh;
+  width: 12vw;
   height: auto;
   padding-top: 5px;
 }
@@ -174,13 +171,13 @@
   font-size: 2vw;
 }
 
-.proficiencyTile:hover i {
+/* .proficiencyTile:hover i {
   font-size: 10em;
 }
 
 .proficiencyTile:hover img {
   width: 15vh;
-}
+} */
 
 .resumeLink {
   min-height: 30vw;
@@ -313,6 +310,16 @@
   background-color: black;
   color: white;
 }
+
+#collage img {
+    position: fixed;
+    top: auto;
+    left: auto;
+    max-width: 80%;
+    height: auto;
+    display: block;
+    margin: 0;
+  }
 
 @media (min-width: 1500px) {
   .proficiencyTile, .resumeLink {
