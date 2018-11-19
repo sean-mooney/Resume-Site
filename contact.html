@@ -25,18 +25,22 @@
           var name = document.forms["contact-form"]["name"].value;
           var email = document.forms["contact-form"]["email"].value;
           var message = document.forms["contact-form"]["message"].value;
-          if (name == "") {
+          if (name === "") {
               alert("Name must be filled out");
               return false;
-          }
-          else if (email == "") {
+          } else if (email === "") {
             alert("Email must be filled out");
             return false;
-          }
-          else if (message == "") {
+          } else if (message === "" || message.length === 0) {
             alert("Message can not be left blank");
             return false;
-          }
+          } else if (email.length > 0) {
+            var re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+            if (!re.test(String(email).toLowerCase())) {
+              alert('Invalid email');
+              return false;
+            }
+          } 
       }
     </script>
   </head>
