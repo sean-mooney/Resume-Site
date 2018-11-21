@@ -149,8 +149,11 @@
   background-color: white;
 }
 .proficiencyTile {
-  min-height: 30vw;
-  flex-wrap: wrap;
+    min-height: 30vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
 .proficiencyTile i, .proficiencyTile img {

@@ -1,7 +1,6 @@
 <?php
 if(isset($_POST['email'])) {
 
-    // EDIT THE 2 LINES BELOW AS REQUIRED
     $email_to = "smooney914@gmail.com";
     $email_subject = "Email from sean-mooney.com";
 
@@ -14,7 +13,6 @@ if(isset($_POST['email'])) {
     }
 
 
-    // validation expected data exists
     if(!isset($_POST['name']) ||
         !isset($_POST['email']) ||
         !isset($_POST['phone']) ||
@@ -24,10 +22,10 @@ if(isset($_POST['email'])) {
 
 
 
-    $name = $_POST['name']; // required
-    $email_from = $_POST['email']; // required
-    $telephone = $_POST['phone']; // not required
-    $message = $_POST['message']; // required
+    $name = $_POST['name'];
+    $email_from = $_POST['email'];
+    $telephone = $_POST['phone'];
+    $message = $_POST['message'];
 
     $error_message = "";
     $email_exp = '/^[A-Za-z0-9._%-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,4}$/';
@@ -65,7 +63,6 @@ if(isset($_POST['email'])) {
     $email_message .= "Telephone: ".clean_string($phone)."\n";
     $email_message .= "Message: ".clean_string($message)."\n";
 
-// create email headers
 $headers = 'From: '.$email_from."\r\n".
 'Reply-To: '.$email_from."\r\n" .
 'X-Mailer: PHP/' . phpversion();
@@ -73,7 +70,6 @@ mail($email_to, $email_subject, $email_message, $headers);
 header ("location: /contact-sent.html");
 ?>
 
-<!-- include your own success html here -->
 
 Thank you for contacting us. We will be in touch with you very soon.
 
