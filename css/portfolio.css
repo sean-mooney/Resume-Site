@@ -122,11 +122,17 @@ body {
   /* main property */
   transition:.3s;
   font-family: "HelveticaNeue-Light";
+  cursor: pointer;
 }
 
 .more-info-button:hover {
   background-color: white;
   color: black;
+}
+
+.link-out {
+  margin-left: 10px;
+  margin-right: 10px;
 }
 
 .footer {
